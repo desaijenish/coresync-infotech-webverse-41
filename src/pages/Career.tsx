@@ -28,6 +28,7 @@ import {
   Network,
   Binary,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const Career = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -425,6 +426,7 @@ const Career = () => {
         </div>
 
         <Navbar />
+        <BackgroundEffects />
 
         {/* Hero Banner with Office Photo */}
         <section
@@ -594,7 +596,7 @@ const Career = () => {
         <ApplicationModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          availablePositions={jobListings}
+          // availablePositions={jobListings}
         />
       </div>
     </ThemeProvider>

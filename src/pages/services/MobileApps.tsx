@@ -26,6 +26,7 @@ import {
   Star,
   TrendingUp,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const MobileAppDevelopment = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
@@ -160,6 +161,7 @@ const MobileAppDevelopment = () => {
         </div>
 
         <Navbar />
+        <BackgroundEffects />
 
         <div className="pt-20 relative z-10" ref={containerRef}>
           {/* Hero Section */}

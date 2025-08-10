@@ -1,14 +1,13 @@
-
-import React, { useState, useEffect, useRef } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import ClientsMarquee from '@/components/ClientsMarquee';
-import InteractiveServicesOverview from '@/components/InteractiveServicesOverview';
-import WhyChooseUs from '@/components/WhyChooseUs';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
-import ContactModal from '@/components/ContactModal';
-import { ThemeProvider } from '@/components/ThemeProvider';
+import React, { useState, useEffect, useRef } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ClientsMarquee from "@/components/ClientsMarquee";
+import InteractiveServicesOverview from "@/components/InteractiveServicesOverview";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import ContactModal from "@/components/ContactModal";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const Index = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -19,11 +18,11 @@ const Index = () => {
     const handleAutoScroll = () => {
       if (window.innerWidth >= 768) {
         const timer = setTimeout(() => {
-          const contactSection = document.getElementById('contact');
+          const contactSection = document.getElementById("contact");
           if (contactSection) {
-            contactSection.scrollIntoView({ 
-              behavior: 'smooth',
-              block: 'start'
+            contactSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
           }
         }, 5000);
@@ -39,15 +38,16 @@ const Index = () => {
     <ThemeProvider>
       <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
         <Navbar />
+
         <Hero onContactClick={() => setIsContactOpen(true)} />
         <ClientsMarquee />
         <InteractiveServicesOverview />
         <WhyChooseUs />
         <ContactSection />
         <Footer />
-        <ContactModal 
-          isOpen={isContactOpen} 
-          onClose={() => setIsContactOpen(false)} 
+        <ContactModal
+          isOpen={isContactOpen}
+          onClose={() => setIsContactOpen(false)}
         />
       </div>
     </ThemeProvider>

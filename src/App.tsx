@@ -38,6 +38,7 @@ import PCGames from "./pages/services/PCGames";
 import TwoDThreeDGames from "./pages/services/TwoDThreeDGames";
 import AIMLSolutions from "./pages/services/AIMLSolutions";
 import ScrollToTop from "./components/ScrollToTop";
+import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
 
@@ -48,83 +49,94 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop /> {/* Yeh lagana zaroori hai */}
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/services/ai-software" element={<AISoftware />} />
-          <Route
-            path="/services/game-development"
-            element={<GameDevelopment />}
-          />
-          <Route
-            path="/services/web-development"
-            element={<WebDevelopment />}
-          />
-          <Route path="/services/mobile-apps" element={<MobileApps />} />
-          <Route
-            path="/services/animation-video"
-            element={<AnimationVideo />}
-          />
-          <Route path="/services/ai-ml-solutions" element={<AIMLSolutions />} />
-          <Route
-            path="/services/android-development"
-            element={<AndroidDevelopment />}
-          />
-          {/* Placeholder routes for other sub-services */}
-          <Route
-            path="/services/ios-development"
-            element={<IOSDevelopment />}
-          />
-          <Route
-            path="/services/flutter-development"
-            element={<FlutterDevelopment />}
-          />
-          <Route
-            path="/services/react-native-development"
-            element={<ReactNativeDevelopment />}
-          />
-          <Route path="/services/ionic-development" element={<Ionic />} />
-          <Route path="/services/react-development" element={<ReactJS />} />
-          <Route path="/services/nextjs-development" element={<NextJS />} />
-          <Route path="/services/vite-development" element={<Vite />} />
-          <Route path="/services/tailwind-development" element={<Tailwind />} />
-          <Route
-            path="/services/javascript-development"
-            element={<JavaScript />}
-          />
-          <Route
-            path="/services/typescript-development"
-            element={<TypeScript />}
-          />
-          <Route path="/services/erp-systems" element={<ERPSystems />} />
-          <Route path="/services/crm-software" element={<CRMSoftware />} />
-          <Route
-            path="/services/business-analytics"
-            element={<BusinessAnalytics />}
-          />
-          <Route path="/services/2d-animation" element={<TwoDAnimation />} />
-          <Route path="/services/3d-animation" element={<ThreeDAnimation />} />
-          <Route
-            path="/services/motion-graphics"
-            element={<MotionGraphics />}
-          />
-          <Route
-            path="/services/video-production"
-            element={<VideoProduction />}
-          />
-          <Route path="/services/unity-development" element={<Unity />} />
-          <Route
-            path="/services/unreal-development"
-            element={<UnrealEngine />}
-          />
-          <Route path="/services/mobile-games" element={<MobileGames />} />
-          <Route path="/services/pc-games" element={<PCGames />} />
-          <Route path="/services/2d-3d-games" element={<TwoDThreeDGames />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/services/ai-software" element={<AISoftware />} />
+            <Route
+              path="/services/game-development"
+              element={<GameDevelopment />}
+            />
+            <Route
+              path="/services/web-development"
+              element={<WebDevelopment />}
+            />
+            <Route path="/services/mobile-apps" element={<MobileApps />} />
+            <Route
+              path="/services/animation-video"
+              element={<AnimationVideo />}
+            />
+            <Route
+              path="/services/ai-ml-solutions"
+              element={<AIMLSolutions />}
+            />
+            <Route
+              path="/services/android-development"
+              element={<AndroidDevelopment />}
+            />
+            {/* Placeholder routes for other sub-services */}
+            <Route
+              path="/services/ios-development"
+              element={<IOSDevelopment />}
+            />
+            <Route
+              path="/services/flutter-development"
+              element={<FlutterDevelopment />}
+            />
+            <Route
+              path="/services/react-native-development"
+              element={<ReactNativeDevelopment />}
+            />
+            <Route path="/services/ionic-development" element={<Ionic />} />
+            <Route path="/services/react-development" element={<ReactJS />} />
+            <Route path="/services/nextjs-development" element={<NextJS />} />
+            <Route path="/services/vite-development" element={<Vite />} />
+            <Route
+              path="/services/tailwind-development"
+              element={<Tailwind />}
+            />
+            <Route
+              path="/services/javascript-development"
+              element={<JavaScript />}
+            />
+            <Route
+              path="/services/typescript-development"
+              element={<TypeScript />}
+            />
+            <Route path="/services/erp-systems" element={<ERPSystems />} />
+            <Route path="/services/crm-software" element={<CRMSoftware />} />
+            <Route
+              path="/services/business-analytics"
+              element={<BusinessAnalytics />}
+            />
+            <Route path="/services/2d-animation" element={<TwoDAnimation />} />
+            <Route
+              path="/services/3d-animation"
+              element={<ThreeDAnimation />}
+            />
+            <Route
+              path="/services/motion-graphics"
+              element={<MotionGraphics />}
+            />
+            <Route
+              path="/services/video-production"
+              element={<VideoProduction />}
+            />
+            <Route path="/services/unity-development" element={<Unity />} />
+            <Route
+              path="/services/unreal-development"
+              element={<UnrealEngine />}
+            />
+            <Route path="/services/mobile-games" element={<MobileGames />} />
+            <Route path="/services/pc-games" element={<PCGames />} />
+            <Route path="/services/2d-3d-games" element={<TwoDThreeDGames />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

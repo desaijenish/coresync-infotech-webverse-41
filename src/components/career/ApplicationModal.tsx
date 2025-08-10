@@ -1,8 +1,7 @@
-
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Upload, User, Mail, FileText } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Upload, User, Mail, FileText } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface ApplicationModalProps {
   isOpen: boolean;
@@ -11,36 +10,40 @@ interface ApplicationModalProps {
 
 const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    position: '',
-    coverLetter: '',
-    resume: null as File | null
+    fullName: "",
+    email: "",
+    phone: "",
+    position: "",
+    coverLetter: "",
+    resume: null as File | null,
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      resume: file
+      resume: file,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
-    console.log('Application submitted:', formData);
+    console.log("Application submitted:", formData);
     // Show success message and close modal
-    alert('Application submitted successfully!');
+    alert("Application submitted successfully!");
     onClose();
   };
 
@@ -144,10 +147,16 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background"
                       >
                         <option value="">Select a position</option>
-                        <option value="frontend-developer">Frontend Developer</option>
+                        <option value="frontend-developer">
+                          Frontend Developer
+                        </option>
                         <option value="ai-ml-engineer">AI/ML Engineer</option>
-                        <option value="mobile-developer">Mobile App Developer</option>
-                        <option value="intern">Software Engineering Intern</option>
+                        <option value="mobile-developer">
+                          Mobile App Developer
+                        </option>
+                        <option value="intern">
+                          Software Engineering Intern
+                        </option>
                       </select>
                     </div>
                   </div>

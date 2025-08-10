@@ -16,6 +16,7 @@ import {
   Star,
   Trophy,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const TwoDThreeDGames = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
@@ -112,7 +113,7 @@ const TwoDThreeDGames = () => {
     <ThemeProvider>
       <div className="min-h-screen bg-background text-foreground transition-colors duration-300 relative overflow-hidden">
         <Navbar />
-
+        <BackgroundEffects />
         <div className="pt-20 relative z-10" ref={containerRef}>
           {/* Hero Section */}
           <section className="py-20 px-4">

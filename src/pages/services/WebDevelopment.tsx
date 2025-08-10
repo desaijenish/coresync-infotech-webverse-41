@@ -21,6 +21,7 @@ import {
   Monitor,
   Layers,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const WebDevelopment = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
@@ -181,6 +182,7 @@ const WebDevelopment = () => {
         </div>
 
         <Navbar />
+        <BackgroundEffects />
 
         <div className="pt-20 relative z-10" ref={containerRef}>
           {/* Hero Section */}

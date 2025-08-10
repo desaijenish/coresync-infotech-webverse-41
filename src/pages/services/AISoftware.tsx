@@ -21,6 +21,7 @@ import {
   Cog,
   Activity,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const ComputerSoftware = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
@@ -149,9 +150,8 @@ const ComputerSoftware = () => {
             ></div>
           </div>
         </div>
-
         <Navbar />
-
+        <BackgroundEffects /> {/* <-- Yaha daal diya */}
         <div className="pt-20 relative z-10" ref={containerRef}>
           {/* Hero Section */}
           <section className="py-20 px-4">
@@ -719,7 +719,6 @@ const ComputerSoftware = () => {
             </div>
           </section>
         </div>
-
         <Footer />
       </div>
     </ThemeProvider>

@@ -21,6 +21,7 @@ import {
   Play,
   Layers3,
 } from "lucide-react";
+import BackgroundEffects from "@/components/BackgroundEffects";
 
 const GameDevelopment = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
@@ -169,6 +170,7 @@ const GameDevelopment = () => {
         </div>
 
         <Navbar />
+        <BackgroundEffects />
 
         <div className="pt-20 relative z-10" ref={containerRef}>
           {/* Hero Section */}
