@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Card, CardContent } from "@/components/ui/card";
 import BackgroundEffects from "@/components/BackgroundEffects";
+import TeamSection from '@/components/TeamSection';
+import { teamData } from '@/data/teamData';
 
 const AboutUs = () => {
   const principles = [
@@ -305,6 +307,7 @@ const AboutUs = () => {
         </section>
 
         {/* Team & Culture Section */}
+
         <section className="py-16 px-4 relative z-10">
           <div className="container mx-auto">
             <motion.div
@@ -371,6 +374,8 @@ const AboutUs = () => {
             </motion.div>
           </div>
         </section>
+
+        <TeamSection teamData={teamData} />
 
         <Footer />
       </div>
