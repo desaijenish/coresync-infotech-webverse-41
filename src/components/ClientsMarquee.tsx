@@ -18,7 +18,7 @@ const ClientsMarquee = () => {
       <div className="container mx-auto mb-8">
         <h2 className="text-3xl font-bold text-center mb-4">Trusted by Industry Leaders</h2>
         <p className="text-center text-muted-foreground">
-          We're proud to work with amazing companies around the world
+          Proudly partnering with visionary brands across the globe.
         </p>
       </div>
       

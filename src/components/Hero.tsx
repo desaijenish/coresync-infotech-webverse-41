@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
     {
       title: "AI-Based Business Software",
       description:
-        "Automate workflows with intelligent solutions that transform your business operations and boost productivity.",
+        "Streamline your workflows with smart, AI-driven tools that revolutionize operations, reduce manual effort, and accelerate productivity.",
       illustration: (
         <svg
           viewBox="0 0 400 400"
@@ -72,7 +72,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
     {
       title: "Game Development",
       description:
-        "Create immersive gaming experiences across all platforms with cutting-edge engines and frameworks.",
+        "Build captivating games for every platform using next-gen engines and powerful frameworks that bring your ideas to life.",
       illustration: (
         <svg
           viewBox="0 0 400 400"
@@ -113,7 +113,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
     {
       title: "Web Development",
       description:
-        "Build modern, responsive websites and web applications with the latest technologies and best practices.",
+        "Craft responsive, high-performance websites and web apps using the latest technologies and industry best practices.",
       illustration: (
         <svg
           viewBox="0 0 400 400"
@@ -183,7 +183,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
     {
       title: "Mobile App Development",
       description:
-        "Develop native and cross-platform mobile applications with seamless user experiences for iOS and Android.",
+        "Develop sleek native and cross-platform mobile apps for iOS and Android, delivering seamless, intuitive user experiences.",
       illustration: (
         <svg
           viewBox="0 0 400 400"
@@ -266,7 +266,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
     {
       title: "Animation & Video Editing",
       description:
-        "Create stunning animations, motion graphics, and video content that brings your brand vision to life.",
+        "Produce eye-catching animations, motion graphics, and videos that transform your brand vision into compelling visual stories.",
       illustration: (
         <svg
           viewBox="0 0 400 400"

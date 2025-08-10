@@ -25,34 +25,34 @@ const WhyChooseUs = () => {
 
   const values = [
     {
-      icon: ShieldCheck,
-      title: "Trustworthiness",
-      description: "Always transparent. Always reliable."
-    },
-    {
-      icon: Handshake,
-      title: "Ethical Work",
-      description: "Integrity at the core of every project."
-    },
-    {
       icon: Brain,
       title: "Powerful Mindset",
-      description: "Innovative thinking that drives results."
+      description: "Forward-thinking innovation that delivers real impact."
     },
     {
       icon: WandSparkles,
       title: "Creativity",
-      description: "Bold ideas, beautiful execution."
-    },
-    {
-      icon: Eye,
-      title: "Transparency",
-      description: "Clear processes, open communication."
+      description: "Bold concepts brought to life with flawless execution."
     },
     {
       icon: Wrench,
       title: "Problem-Solving",
-      description: "Turning challenges into opportunities."
+      description: "Transforming obstacles into growth opportunities."
+    },
+    {
+      icon: Handshake,
+      title: "Ethical Work",
+      description: "Integrity guiding every decision and project."
+    },
+    {
+      icon: ShieldCheck,
+      title: "Trustworthiness",
+      description: "Committed to honesty and delivering on our promises."
+    },
+    {
+      icon: Eye,
+      title: "Transparency",
+      description: "Open communication and clear processes at every step."
     }
   ];
 
@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
           <p className={`text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 leading-relaxed px-4 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            We bring together expertise, innovation, and dedication to deliver exceptional results for your business
+            Where expertise meets innovation — delivering solutions that drive growth, inspire trust, and set your business apart.
           </p>
         </div>
 
