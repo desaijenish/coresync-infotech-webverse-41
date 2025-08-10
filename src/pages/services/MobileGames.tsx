@@ -8,80 +8,79 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
   Smartphone,
-  Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Gamepad,
+  DollarSign,
+  Cloud,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const MobileGames = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Gamepad className="w-6 h-6" />,
+      title: "Addictive Gameplay",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Design and develop engaging gameplay loops that keep players coming back for more.",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <DollarSign className="w-6 h-6" />,
+      title: "Monetization Strategy",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Integrate effective monetization models like in-app purchases and rewarded ads.",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      icon: <Cloud className="w-6 h-6" />,
+      title: "Cross-Platform Support",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Build games that work seamlessly on both iOS and Android devices.",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Smartphone className="w-6 h-6" />,
+      title: "Optimized Performance",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Ensure your game runs smoothly on a wide range of mobile devices without performance issues.",
     },
   ];
 
   const technologies = [
+    "Unity",
+    "Unreal Engine",
+    "Flutter",
+    "Swift",
     "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
     "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "AdMob",
+    "Apple App Store",
+    "Google Play Store",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Puzzle Adventure Game",
+      description:
+        "A story-driven puzzle game with beautiful art and challenging levels.",
+      technologies: ["Unity", "2D Animation", "Mobile"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Multiplayer Racing Game",
+      description:
+        "A real-time multiplayer racing game with customizable vehicles and tracks.",
+      technologies: ["Unity", "Multiplayer", "iOS", "Android"],
       rating: 4.9,
+    },
+    {
+      title: "Hyper-Casual Arcade Game",
+      description:
+        "A simple, one-touch arcade game designed for quick, satisfying gameplay sessions.",
+      technologies: ["Unity", "AdMob", "Hyper-Casual"],
+      rating: 4.7,
     },
   ];
 
@@ -130,50 +129,50 @@ const Android = () => {
                 <div className="flex items-center justify-center mb-6">
                   <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Mobile{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Games
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  From hyper-casual to high-fidelity, we develop captivating
+                  mobile games that delight players and perform flawlessly on
+                  all devices.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      50+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Mobile Games
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      20M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Total Installs
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Uptime Rate
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.5★
                     </div>
                     <div className="text-sm text-muted-foreground">
                       Average Rating
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      80%
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Player Retention
                     </div>
                   </div>
                 </div>
@@ -193,16 +192,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Games for{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Every Player
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  We specialize in creating games that are optimized for the
+                  mobile experience, from intuitive controls and beautiful UI to
+                  scalable backends and smart monetization strategies.
                 </p>
               </div>
 
@@ -250,9 +248,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Toolkit
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +280,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Portfolio
                   </span>
                 </h2>
               </div>
@@ -349,18 +347,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Your Next Hit Mobile Game{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Starts Here
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Let's bring your game idea to life and get it in the hands of
+                  millions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get a Free Estimate
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +366,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Discuss Your Idea
                   </Button>
                 </div>
               </div>
@@ -382,4 +380,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default MobileGames;

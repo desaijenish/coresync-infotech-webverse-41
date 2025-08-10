@@ -1,75 +1,90 @@
-
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    "Services": [
-      "AI Development",
-      "Game Development", 
-      "Web Development",
-      "Mobile Apps",
-      "Animation"
+    Services: [
+      { name: "AI Development", path: "/services/ai-ml-solutions" },
+      { name: "Game Development", path: "/services/game-development" },
+      { name: "Web Development", path: "/services/web-development" },
+      { name: "Mobile Apps", path: "/services/mobile-apps" },
+      { name: "Animation", path: "/services/animation-video" },
     ],
-    "Company": [
-      "About Us",
-      "Our Team",
-      "Careers",
-      "Contact",
-      "Blog"
+    Company: [
+      { name: "About Us", path: "/about" },
+      { name: "Our Team", path: "/team" },
+      { name: "Careers", path: "/career" },
+      { name: "Contact", path: "/contact" },
+      { name: "Blog", path: "/blog" },
     ],
-    "Support": [
-      "Help Center",
-      "Documentation",
-      "Community",
-      "Status",
-      "Privacy Policy"
-    ]
+    Support: [
+      { name: "Help Center", path: "/help" },
+      { name: "Documentation", path: "/docs" },
+      { name: "Community", path: "/community" },
+      { name: "Status", path: "/status" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
+    ],
   };
 
+  const socialLinks = [
+    { icon: "📧", label: "Email", url: "mailto:info@coresync.com" },
+    {
+      icon: "📱",
+      label: "LinkedIn",
+      url: "https://linkedin.com/company/coresync",
+    },
+    { icon: "🐦", label: "Twitter", url: "https://twitter.com/coresync" },
+  ];
+
   return (
-    <footer className="bg-card border-t-2 border-border py-16">
+    <footer className="bg-card border-t border-border py-12 mt-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand Info */}
+          <div className="space-y-5">
+            <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-lg flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-xl">C</span>
               </div>
-              <span className="text-xl font-bold">Coresync Infotech</span>
+              <span className="text-xl font-bold text-foreground">
+                Coresync Infotech
+              </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Transforming businesses through innovative technology solutions. 
+              Transforming businesses through innovative technology solutions.
               Your trusted partner in digital transformation.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300">
-                📧 Email
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300">
-                📱 LinkedIn
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300">
-                🐦 Twitter
-              </a>
+              {socialLinks.map((social, i) => (
+                <a
+                  key={i}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300 text-lg"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Footer Links */}
+          {/* Footer Navigation */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
               <h3 className="font-semibold text-foreground mb-4">{category}</h3>
               <ul className="space-y-2">
                 {links.map((link, index) => (
                   <li key={index}>
-                    <a 
-                      href="#" 
+                    <Link
+                      to={link.path}
                       className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300"
                     >
-                      {link}
-                    </a>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -77,17 +92,24 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        {/* Bottom Bar */}
+        <div className="border-t border-border mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
             © {currentYear} Coresync Infotech. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300">
+          <div className="flex space-x-6">
+            <Link
+              to="/terms"
+              className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300"
+            >
               Terms of Service
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300">
+            </Link>
+            <Link
+              to="/privacy-policy"
+              className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300"
+            >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

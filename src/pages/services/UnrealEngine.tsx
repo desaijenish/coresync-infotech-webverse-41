@@ -7,81 +7,79 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
+  Gamepad,
   Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Globe,
+  Film,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const UnrealEngine = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
+      icon: <Gamepad className="w-6 h-6" />,
+      title: "AAA Game Development",
+      description:
+        "Build visually stunning, high-performance games for PC and consoles.",
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: "Photorealistic Graphics",
+      description:
+        "Utilize advanced rendering techniques to create hyper-realistic environments and characters.",
+    },
+    {
+      icon: <Film className="w-6 h-6" />,
+      title: "Cinematic Experiences",
+      description:
+        "Produce high-quality cinematics and visual effects for film and television.",
+    },
+    {
       icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      title: "Blueprints & C++",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
-      description:
-        "Rapid prototyping and iterative development for quick time-to-market",
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Develop robust gameplay mechanics using either visual scripting with Blueprints or C++.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Unreal Engine 5",
+    "C++",
+    "Blueprints",
+    "Nanite",
+    "Lumen",
+    "MetaHuman",
+    "Virtual Production",
+    "Game AI",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "High-Fidelity RPG",
+      description:
+        "A large-scale role-playing game with detailed environments and complex character systems.",
+      technologies: ["Unreal Engine", "C++", "RPG", "Open World"],
+      rating: 5.0,
+    },
+    {
+      title: "Virtual Reality Training Simulator",
+      description:
+        "A VR simulation for medical professionals to practice complex surgical procedures.",
+      technologies: ["Unreal Engine", "VR", "Simulation"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
-      rating: 4.8,
-    },
-    {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
-      rating: 4.9,
+      title: "Cinematic Short Film",
+      description:
+        "A stunningly rendered short film using Unreal Engine's real-time cinematic tools.",
+      technologies: ["Unreal Engine", "Virtual Production", "VFX"],
+      rating: 5.0,
     },
   ];
 
@@ -128,52 +126,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Gamepad className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Unreal Engine{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create cinematic, visually stunning, and performance-driven
+                  games and simulations using the industry-leading Unreal
+                  Engine.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      20+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Unreal Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      97%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Performance Rating
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      100%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Custom Solutions
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Client Satisfaction
                     </div>
                   </div>
                 </div>
@@ -193,16 +191,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Next-Gen{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Visuals
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Unreal Engine offers unparalleled capabilities for creating
+                  realistic graphics and high-fidelity worlds, making it the
+                  perfect choice for ambitious game and simulation projects.
                 </p>
               </div>
 
@@ -250,9 +247,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Unreal{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Technologies
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +279,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Creations
                   </span>
                 </h2>
               </div>
@@ -349,18 +346,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  The Ultimate Gaming{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Experience
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Partner with us to create games that set a new standard for
+                  visuals and performance.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Schedule a Meeting
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +365,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Our Portfolio
                   </Button>
                 </div>
               </div>
@@ -382,4 +379,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default UnrealEngine;

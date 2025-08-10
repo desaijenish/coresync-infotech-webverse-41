@@ -7,81 +7,78 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
+  Film,
+  Layers,
+  Sparkles,
   Zap,
-  Shield,
-  Users,
-  Rocket,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const MotionGraphics = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Layers className="w-6 h-6" />,
+      title: "Animated Logos",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Give your brand a dynamic identity with a professionally animated logo.",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Film className="w-6 h-6" />,
+      title: "Title Sequences",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Create captivating opening and closing titles for your videos and films.",
+    },
+    {
+      icon: <Sparkles className="w-6 h-6" />,
+      title: "Infographics",
+      description:
+        "Transform complex data and information into visually engaging animated infographics.",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "UI/UX Animation",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Enhance user experience with smooth and interactive UI and app animations.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Adobe After Effects",
+    "Premiere Pro",
+    "Cinema 4D",
+    "Blender",
+    "Figma",
+    "Lottie",
+    "Cel Animation",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Brand Intro Video",
+      description:
+        "A stylish motion graphics video introducing a new brand and its core values.",
+      technologies: ["After Effects", "Premiere Pro", "Branding"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Animated Infographic",
+      description:
+        "A complex report on market trends animated into an easy-to-digest video.",
+      technologies: ["After Effects", "Illustrator", "Data Visualization"],
       rating: 4.9,
+    },
+    {
+      title: "Social Media Ads",
+      description:
+        "Short, punchy motion graphics videos optimized for social media platforms.",
+      technologies: ["After Effects", "Premiere Pro", "Social Media"],
+      rating: 4.7,
     },
   ];
 
@@ -128,52 +125,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Film className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Motion{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Graphics
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Elevate your content with dynamic motion graphics. We create
+                  eye-catching animations for branding, advertising, and
+                  explainer videos.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      500+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Motion Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      8M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Total Engagements
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      96%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Client Retention
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Project Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +190,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Engaging{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Visuals
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Motion graphics are key to creating a powerful brand identity
+                  and delivering information in a visually appealing and
+                  memorable format.
                 </p>
               </div>
 
@@ -250,9 +246,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Expertise
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +278,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Creative{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Work
                   </span>
                 </h2>
               </div>
@@ -349,18 +345,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Add Life to Your{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Content
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  From simple logo animations to complex explainer videos, we
+                  have you covered.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get a Free Consultation
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +364,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Explore Our Gallery
                   </Button>
                 </div>
               </div>
@@ -382,4 +378,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default MotionGraphics;

@@ -7,80 +7,79 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
+  Factory,
+  Clipboard,
   Shield,
-  Users,
-  Rocket,
+  BarChart,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const ERPSystems = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <BarChart className="w-6 h-6" />,
+      title: "Real-time Analytics",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Get instant insights into your business performance and make informed decisions.",
+    },
+    {
+      icon: <Clipboard className="w-6 h-6" />,
+      title: "Custom Modules",
+      description:
+        "Build specialized modules to fit your unique business processes and requirements.",
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      title: "Data Security",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Ensure your sensitive business data is secure with robust encryption and access controls.",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      icon: <Factory className="w-6 h-6" />,
+      title: "Scalable Infrastructure",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Our ERP systems are designed to grow with your business, handling increasing workloads seamlessly.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "SAP",
+    "Oracle",
+    "Microsoft Dynamics",
+    "SQL",
+    "PostgreSQL",
+    "Cloud Computing",
+    "ERPNext",
+    "Odoo",
+    "Business Intelligence",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Manufacturing ERP",
+      description:
+        "A comprehensive system for managing production, inventory, and supply chain for a manufacturing company.",
+      technologies: ["Custom ERP", "Manufacturing", "Supply Chain"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Retail Management System",
+      description:
+        "An all-in-one solution for retail operations, including POS, inventory, and customer management.",
+      technologies: ["Retail", "Inventory Management", "POS"],
+      rating: 4.7,
+    },
+    {
+      title: "Healthcare ERP",
+      description:
+        "A system tailored for hospitals to manage patient records, appointments, billing, and resources.",
+      technologies: ["Healthcare", "Patient Management", "Billing"],
       rating: 4.9,
     },
   ];
@@ -128,52 +127,49 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Factory className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    ERP{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Systems
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Streamline and integrate your core business processes with our
+                  custom-built Enterprise Resource Planning (ERP) systems.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      40+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      ERP Implementations
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
                       99.9%
                     </div>
+                    <div className="text-sm text-muted-foreground">Uptime</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      100%
+                    </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Custom Solutions
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      20%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Productivity Boost
                     </div>
                   </div>
                 </div>
@@ -193,16 +189,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Integrated{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Business Management
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Our ERP solutions centralize data and automate key functions
+                  like finance, HR, and supply chain, providing a unified view
+                  of your operations.
                 </p>
               </div>
 
@@ -250,9 +245,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Expertise
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +277,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Case{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Studies
                   </span>
                 </h2>
               </div>
@@ -349,18 +344,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Simplify and Scale Your Business with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    ERP
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Get a custom ERP system that works for your business, not the
+                  other way around.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Request a Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +363,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Learn More
                   </Button>
                 </div>
               </div>
@@ -382,4 +377,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default ERPSystems;

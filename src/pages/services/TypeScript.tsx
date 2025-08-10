@@ -7,80 +7,80 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
+  Globe,
   Shield,
-  Users,
+  Zap,
+  Code,
+  CheckCircle,
   Rocket,
   ArrowRight,
-  CheckCircle,
   Star,
   Trophy,
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const TypeScript = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
-      description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+      icon: <Shield className="w-6 h-6" />,
+      title: "Type Safety",
+      description: "Catch errors at compile time with static type checking",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Code className="w-6 h-6" />,
+      title: "Better Developer Experience",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Enhanced IDE support with autocomplete and refactoring tools",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Modern JavaScript+",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "All JavaScript features plus powerful type system and latest ECMAScript",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <CheckCircle className="w-6 h-6" />,
+      title: "Production Ready",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Enterprise-grade applications with improved maintainability",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "TypeScript",
+    "TSC Compiler",
+    "Type Definitions",
+    "Generics",
+    "Interfaces",
+    "Decorators",
+    "Modules",
+    "ESNext",
+    "Strict Mode",
+    "Declaration Files",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Enterprise SaaS Platform",
+      description:
+        "Type-safe enterprise application with complex business logic",
+      technologies: ["TypeScript", "React", "Node.js"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Financial Trading System",
+      description:
+        "High-performance trading platform with real-time data processing",
+      technologies: ["TypeScript", "WebSockets", "Express"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Design System Library",
+      description: "Comprehensive component library with full type coverage",
+      technologies: ["TypeScript", "Storybook", "Jest"],
       rating: 4.9,
     },
   ];
@@ -128,52 +128,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Shield className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    TypeScript{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Build robust, scalable applications with TypeScript's powerful
+                  type system. Enhance JavaScript with static typing for better
+                  code quality and developer productivity.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      78%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Developer Satisfaction
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      250+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      TypeScript Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      15%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Fewer Runtime Errors
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Code Quality Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +193,17 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  JavaScript That{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Scales
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  TypeScript brings enterprise-level development practices to
+                  JavaScript projects. With static type checking, enhanced IDE
+                  support, and improved refactoring capabilities, we build
+                  applications that are reliable, maintainable, and ready for
+                  growth.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  TypeScript{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Features
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +283,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Enterprise{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Solutions
                   </span>
                 </h2>
               </div>
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Scale with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    TypeScript
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Build enterprise-grade applications with the safety and
+                  productivity of static typing.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Typing
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Architecture
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default TypeScript;

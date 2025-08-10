@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
+  Globe,
   Zap,
-  Shield,
-  Users,
   Rocket,
+  Package,
+  Code,
+  Settings,
   ArrowRight,
   CheckCircle,
   Star,
@@ -20,67 +20,68 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const Vite = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
-      description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
-    },
-    {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Lightning Fast",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Instant server start and lightning-fast hot module replacement",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Package className="w-6 h-6" />,
+      title: "Optimized Builds",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Pre-configured Rollup builds with intelligent code splitting",
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Framework Agnostic",
+      description: "Works with React, Vue, Svelte, and vanilla JavaScript",
+    },
+    {
+      icon: <Settings className="w-6 h-6" />,
+      title: "Zero Config",
+      description: "Sensible defaults with extensive customization options",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Vite",
+    "React",
+    "Vue.js",
+    "TypeScript",
+    "ESBuild",
+    "Rollup",
+    "PostCSS",
+    "CSS Modules",
+    "PWA",
+    "Vitest",
+    "Playwright",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Modern SPA Dashboard",
+      description:
+        "High-performance single-page application with real-time data",
+      technologies: ["Vite", "React", "TypeScript"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "E-Learning Platform",
+      description:
+        "Interactive learning platform with video streaming and quizzes",
+      technologies: ["Vite", "Vue.js", "WebRTC"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Portfolio Website",
+      description: "Lightning-fast portfolio site with smooth animations",
+      technologies: ["Vite", "Vanilla JS", "GSAP"],
       rating: 4.9,
     },
   ];
@@ -128,44 +129,44 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Zap className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Vite{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Experience next-generation frontend tooling with Vite. Build
+                  modern web applications with instant server start, blazing
+                  fast HMR, and optimized production builds.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      10x
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Faster Dev Server
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      100+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Vite Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      50ms
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      HMR Update Time
                     </div>
                   </div>
                   <div className="text-center">
@@ -173,7 +174,7 @@ const Android = () => {
                       4.8★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Developer Experience
                     </div>
                   </div>
                 </div>
@@ -193,16 +194,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Next-Generation{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Build Tool
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Vite revolutionizes the development experience with native ES
+                  modules, instant server start, and lightning-fast hot module
+                  replacement. We leverage Vite's power to create modern
+                  applications with unmatched developer productivity.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Vite{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +283,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Built with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Vite
                   </span>
                 </h2>
               </div>
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Supercharge Your{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Development
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Experience the future of frontend development with Vite's
+                  lightning-fast build tool.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get Started
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    See Performance
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default Vite;

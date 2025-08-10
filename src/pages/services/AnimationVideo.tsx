@@ -1,69 +1,343 @@
+import React, { useEffect, useRef, useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
+import {
+  Film,
+  Palette,
+  Play,
+  Video,
+  Camera,
+  Edit3,
+  ArrowRight,
+  CheckCircle,
+  Star,
+  Trophy,
+  Clock,
+} from "lucide-react";
 
-import React, { useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ContactModal from '@/components/ContactModal';
-import ServicePageLayout from '@/components/ServicePageLayout';
-import { ThemeProvider } from '@/components/ThemeProvider';
+const AnimationVideoEditing = () => {
+  const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-const AnimationVideo = () => {
-  const [isContactOpen, setIsContactOpen] = useState(false);
+  const subServices = [
+    {
+      id: 1,
+      name: "2D Animation",
+      description:
+        "Engaging 2D animations for storytelling and brand communication",
+      icon: <Palette className="w-8 h-8" />,
+      technologies: ["After Effects", "Animate", "Toon Boom", "Lottie"],
+      link: "/services/2d-animation",
+      projects: 30,
+      rating: 4.9,
+    },
+    {
+      id: 2,
+      name: "3D Animation",
+      description:
+        "Immersive 3D animations and visual effects for modern content",
+      icon: <Film className="w-8 h-8" />,
+      technologies: ["Blender", "Maya", "Cinema 4D", "3ds Max"],
+      link: "/services/3d-animation",
+      projects: 25,
+      rating: 4.8,
+    },
+    {
+      id: 3,
+      name: "Motion Graphics",
+      description:
+        "Dynamic motion graphics for advertising and digital marketing",
+      icon: <Play className="w-8 h-8" />,
+      technologies: ["After Effects", "Premiere Pro", "Motion", "DaVinci"],
+      link: "/services/motion-graphics",
+      projects: 40,
+      rating: 4.9,
+    },
+    {
+      id: 4,
+      name: "Video Production",
+      description:
+        "Professional video production from concept to final delivery",
+      icon: <Video className="w-8 h-8" />,
+      technologies: ["Premiere Pro", "Final Cut Pro", "Avid", "Color Grading"],
+      link: "/services/video-production",
+      projects: 35,
+      rating: 4.8,
+    },
+  ];
 
-  const illustration = (
-    <svg viewBox="0 0 400 400" className="w-full h-full" fill="currentColor">
-      <defs>
-        <linearGradient id="video-service-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="currentColor" opacity="0.8" />
-          <stop offset="100%" stopColor="currentColor" opacity="0.4" />
-        </linearGradient>
-      </defs>
-      <circle cx="200" cy="200" r="180" fill="url(#video-service-grad)" opacity="0.1" />
-      <rect x="130" y="160" width="140" height="80" rx="12" fill="currentColor" opacity="0.4" />
-      <polygon points="170,190 170,210 200,200" fill="currentColor" opacity="0.8" />
-      <rect x="140" y="250" width="30" height="10" fill="currentColor" opacity="0.6" />
-      <rect x="180" y="250" width="20" height="10" fill="currentColor" opacity="0.5" />
-      <rect x="210" y="250" width="35" height="10" fill="currentColor" opacity="0.7" />
-      <rect x="255" y="250" width="15" height="10" fill="currentColor" opacity="0.4" />
-      <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.6" />
-      <circle cx="300" cy="120" r="6" fill="currentColor" opacity="0.7" />
-      <circle cx="320" cy="290" r="10" fill="currentColor" opacity="0.5" />
-      <circle cx="80" cy="310" r="7" fill="currentColor" opacity="0.8" />
-      <rect x="160" y="120" width="80" height="4" fill="currentColor" opacity="0.3" />
-      <circle cx="200" cy="122" r="8" fill="currentColor" opacity="0.6" />
-    </svg>
-  );
+  const benefits = [
+    "Creative storytelling excellence",
+    "High-quality visual production",
+    "Brand-focused content creation",
+    "Multi-platform optimization",
+    "Fast turnaround times",
+    "Collaborative creative process",
+  ];
+
+  const process = [
+    {
+      title: "Creative Brief",
+      description: "Understanding your vision and creative requirements",
+    },
+    {
+      title: "Concept Development",
+      description: "Storyboarding and visual concept creation",
+    },
+    {
+      title: "Production",
+      description: "Animation and video creation with attention to detail",
+    },
+    {
+      title: "Review & Refinement",
+      description: "Client feedback integration and fine-tuning",
+    },
+    {
+      title: "Final Delivery",
+      description: "Optimized content delivery in required formats",
+    },
+    {
+      title: "Support",
+      description: "Post-delivery support and additional content creation",
+    },
+  ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(
+              entry.target.getAttribute("data-index") || "0"
+            );
+            setVisibleItems((prev) => {
+              const newVisible = [...prev];
+              newVisible[index] = true;
+              return newVisible;
+            });
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const items = containerRef.current?.querySelectorAll("[data-index]");
+    items?.forEach((item) => observer.observe(item));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-300 relative overflow-hidden">
         <Navbar />
-        <ServicePageLayout
-          title="Animation & Video Editing"
-          description="Create stunning animations, motion graphics, and video content that brings your brand vision to life. From promotional videos to complex 3D animations, we deliver visual storytelling that captivates audiences."
-          benefits={[
-            "Professional 2D and 3D animation",
-            "Motion graphics and visual effects", 
-            "Video editing and post-production",
-            "Brand storytelling through visuals",
-            "Multi-format content optimization",
-            "Real-time rendering and previews"
-          ]}
-          techStack={[
-            "After Effects", "Premiere Pro", "Blender", "Cinema 4D",
-            "Lottie", "WebGL", "Three.js", "SVG Animation",
-            "Motion Graphics", "Video Codecs", "FFmpeg"
-          ]}
-          illustration={illustration}
-          onContactClick={() => setIsContactOpen(true)}
-        />
+
+        <div className="pt-20 relative z-10" ref={containerRef}>
+          {/* Hero Section */}
+          <section className="py-20 px-4">
+            <div className="container mx-auto text-center">
+              <div
+                data-index="0"
+                className={`transition-all duration-700 ${
+                  visibleItems[0]
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12"
+                }`}
+              >
+                <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                  Animation &{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    Video Editing
+                  </span>
+                </h1>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
+                  Bring your stories to life with captivating animations and
+                  professional video editing that engages audiences and delivers
+                  powerful visual experiences across all platforms.
+                </p>
+
+                {/* Key Stats */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      130+
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Video Projects
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      5M+
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Total Views
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      72hrs
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Avg Turnaround
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      4.9★
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Client Rating
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Sub-Services Grid */}
+          <section className="py-20 px-4 bg-muted/30">
+            <div className="container mx-auto">
+              <div
+                data-index="1"
+                className={`text-center mb-16 transition-all duration-700 ${
+                  visibleItems[1]
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12"
+                }`}
+              >
+                <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                  Our Creative{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    Services
+                  </span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Professional animation and video services for every creative
+                  need
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {subServices.map((service, index) => (
+                  <div
+                    key={service.id}
+                    data-index={index + 2}
+                    className={`transition-all duration-700 ${
+                      visibleItems[index + 2]
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-12"
+                    }`}
+                    style={{ transitionDelay: `${index * 100}ms` }}
+                  >
+                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg group-hover:from-coresync-primary-light/30 group-hover:to-coresync-primary-dark/30 transition-all duration-300">
+                            {service.icon}
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Star className="w-4 h-4 text-yellow-500" />
+                            <span className="text-sm font-medium">
+                              {service.rating}
+                            </span>
+                          </div>
+                        </div>
+
+                        <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300">
+                          {service.name}
+                        </h3>
+
+                        <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                          {service.description}
+                        </p>
+
+                        <div className="mb-4">
+                          <div className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
+                            Tools & Software
+                          </div>
+                          <div className="flex flex-wrap gap-1">
+                            {service.technologies.map((tech, techIndex) => (
+                              <Badge
+                                key={techIndex}
+                                variant="outline"
+                                className="text-xs"
+                              >
+                                {tech}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                            <Trophy className="w-4 h-4" />
+                            {service.projects} projects
+                          </div>
+                        </div>
+
+                        <Link to={service.link}>
+                          <Button className="w-full group-hover:bg-coresync-primary-light group-hover:text-white transition-all duration-300">
+                            Learn More
+                            <ArrowRight className="w-4 h-4 ml-2" />
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="py-20 px-4">
+            <div className="container mx-auto text-center">
+              <div
+                data-index="6"
+                className={`transition-all duration-700 ${
+                  visibleItems[6]
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12"
+                }`}
+              >
+                <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                  Ready to Create Amazing{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    Visual Content?
+                  </span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+                  Let's bring your creative vision to life with professional
+                  animation and video production.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="px-8 py-6 text-lg">
+                    Start Your Project
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="px-8 py-6 text-lg"
+                  >
+                    View Portfolio
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
         <Footer />
-        <ContactModal 
-          isOpen={isContactOpen} 
-          onClose={() => setIsContactOpen(false)} 
-        />
       </div>
     </ThemeProvider>
   );
 };
 
-export default AnimationVideo;
+export default AnimationVideoEditing;

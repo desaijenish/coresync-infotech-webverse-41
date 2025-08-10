@@ -7,81 +7,79 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
+  Gamepad,
   Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Smartphone,
+  Server,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const Unity = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
+      icon: <Gamepad className="w-6 h-6" />,
+      title: "Cross-Platform Games",
+      description:
+        "Develop games that run on multiple platforms including mobile, PC, and consoles.",
+    },
+    {
       icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      title: "C# Scripting",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Utilize C# for robust and efficient game logic, physics, and gameplay mechanics.",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Smartphone className="w-6 h-6" />,
+      title: "AR/VR Experiences",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Create immersive augmented and virtual reality applications for various devices.",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      icon: <Server className="w-6 h-6" />,
+      title: "Game Monetization",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Implement in-app purchases, ads, and other monetization strategies to generate revenue.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
+    "Unity Engine",
+    "C#",
+    "Asset Store",
+    "WebGL",
+    "AR Foundation",
+    "Photon",
     "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "VR Development",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Hyper-Casual Mobile Game",
+      description:
+        "A fast-paced, addictive mobile game with simple mechanics and high replayability.",
+      technologies: ["Unity", "C#", "Mobile", "Hyper-Casual"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Educational AR App",
+      description:
+        "An augmented reality application that teaches children about science and nature.",
+      technologies: ["Unity AR Foundation", "AR", "Education"],
       rating: 4.9,
+    },
+    {
+      title: "Multiplayer PC Game",
+      description:
+        "A real-time multiplayer game for PC with dedicated servers and cross-platform play.",
+      technologies: ["Unity", "Photon", "PC Gaming", "Multiplayer"],
+      rating: 4.7,
     },
   ];
 
@@ -128,52 +126,51 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Gamepad className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Unity{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Leverage the power of the Unity engine to create stunning 2D,
+                  3D, and AR/VR games for any platform, from mobile to desktop.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      30+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Unity Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      10M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Total Downloads
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      95%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Positive Ratings
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      10+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Years of Experience
                     </div>
                   </div>
                 </div>
@@ -193,16 +190,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Versatile{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Game Creation
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Unity is a flexible and powerful engine for developing games
+                  and interactive experiences. Our expertise allows us to create
+                  immersive worlds and engaging gameplay for your audience.
                 </p>
               </div>
 
@@ -250,9 +246,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Unity{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +278,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Game Titles
                   </span>
                 </h2>
               </div>
@@ -349,14 +345,14 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Build Your Dream Game with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Unity
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  From concept to launch, we'll help you create a game that
+                  players will love.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
@@ -368,7 +364,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Our Services
                   </Button>
                 </div>
               </div>
@@ -382,4 +378,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default Unity;

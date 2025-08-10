@@ -10,8 +10,8 @@ import {
   Smartphone,
   Code,
   Zap,
-  Shield,
-  Users,
+  Target,
+  Layers,
   Rocket,
   ArrowRight,
   CheckCircle,
@@ -20,68 +20,69 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const ReactNative = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      title: "JavaScript/TypeScript",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Leverage familiar web technologies for mobile app development",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Target className="w-6 h-6" />,
+      title: "Cross-Platform",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Write once, deploy to both iOS and Android with native performance",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
-      description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+      title: "Fast Refresh",
+      description: "Live editing and instant updates during development",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Layers className="w-6 h-6" />,
+      title: "Native Modules",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Seamless integration with native iOS and Android functionality",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
+    "React Native",
+    "TypeScript",
+    "Expo",
+    "Redux",
+    "MobX",
+    "React Navigation",
+    "AsyncStorage",
+    "React Native Paper",
+    "Flipper",
+    "CodePush",
     "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Food Delivery Platform",
+      description: "Cross-platform food ordering app with real-time tracking",
+      technologies: ["React Native", "Redux", "Maps API"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Fitness & Wellness App",
+      description: "Health tracking app with wearable device integration",
+      technologies: ["React Native", "HealthKit", "Bluetooth"],
       rating: 4.9,
+    },
+    {
+      title: "Financial Trading App",
+      description:
+        "Real-time trading platform with advanced charts and analytics",
+      technologies: ["React Native", "WebSocket", "Charts"],
+      rating: 4.7,
     },
   ];
 
@@ -128,44 +129,44 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Code className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    React Native{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create native mobile applications using React and JavaScript.
+                  Build cross-platform apps that deliver native performance and
+                  user experience on both iOS and Android.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      38%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Top 500 Apps Use RN
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      90+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      RN Apps Delivered
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      50%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Faster Time to Market
                     </div>
                   </div>
                   <div className="text-center">
@@ -173,7 +174,7 @@ const Android = () => {
                       4.8★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      App Store Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +194,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Native Performance{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Web Skills
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  React Native bridges the gap between web and mobile
+                  development. Using familiar React concepts and JavaScript, we
+                  create mobile applications that deliver truly native
+                  performance and user experience.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  React Native{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Ready to Go{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Cross-Platform?
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Transform your React skills into powerful mobile applications
+                  with React Native.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Building
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Explore Portfolio
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default ReactNative;

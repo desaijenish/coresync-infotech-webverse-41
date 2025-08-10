@@ -8,10 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
   Smartphone,
-  Code,
+  Globe,
   Zap,
-  Shield,
-  Users,
+  Target,
+  Code2,
   Rocket,
   ArrowRight,
   CheckCircle,
@@ -20,68 +20,69 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const Ionic = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Globe className="w-6 h-6" />,
+      title: "Web Technologies",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Build mobile apps using HTML, CSS, and JavaScript frameworks",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
+      icon: <Target className="w-6 h-6" />,
+      title: "Multi-Platform",
+      description: "Deploy to iOS, Android, and web from a single codebase",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
-      description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+      title: "Rapid Development",
+      description: "Accelerated development with pre-built UI components",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+      icon: <Code2 className="w-6 h-6" />,
+      title: "Framework Agnostic",
+      description: "Works with Angular, React, Vue, or vanilla JavaScript",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Ionic Framework",
+    "Capacitor",
+    "Angular",
+    "React",
+    "Vue.js",
+    "TypeScript",
+    "Cordova",
+    "Ionic Native",
+    "Stencil",
+    "PWA",
+    "Ionic CLI",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Enterprise Mobile Portal",
+      description:
+        "Corporate app with authentication, document management, and analytics",
+      technologies: ["Ionic", "Angular", "Capacitor"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Event Management Platform",
+      description:
+        "Comprehensive event planning app with ticketing and networking",
+      technologies: ["Ionic", "React", "Firebase"],
       rating: 4.9,
+    },
+    {
+      title: "Healthcare Patient App",
+      description:
+        "Patient portal with appointment scheduling and health records",
+      technologies: ["Ionic", "Vue.js", "REST API"],
+      rating: 4.7,
     },
   ];
 
@@ -128,52 +129,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Globe className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Ionic{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Build powerful cross-platform mobile applications using web
+                  technologies. Create apps that work seamlessly on iOS,
+                  Android, and web platforms.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      5M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Ionic Apps Built
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      65+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Ionic Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      70%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Cost Reduction
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.6★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Framework Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +194,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Web to{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Mobile
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Ionic empowers developers to build high-quality mobile
+                  applications using familiar web technologies. With Capacitor,
+                  we create truly native experiences while maintaining code
+                  reusability across platforms.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Ionic{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Toolchain
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +283,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Client{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Success
                   </span>
                 </h2>
               </div>
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Build Your{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Ionic App
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Leverage the power of web technologies to create amazing
+                  mobile experiences.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Project
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Examples
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default Ionic;

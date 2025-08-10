@@ -8,10 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
   Smartphone,
-  Code,
+  Layers,
   Zap,
-  Shield,
-  Users,
+  Target,
+  Palette,
   Rocket,
   ArrowRight,
   CheckCircle,
@@ -20,67 +20,68 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const Flutter = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Target className="w-6 h-6" />,
+      title: "Cross-Platform",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
+        "Single codebase for iOS and Android with native performance",
     },
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Fast Development",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Hot reload and rapid iteration for quick development cycles",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+      icon: <Palette className="w-6 h-6" />,
+      title: "Beautiful UI",
+      description: "Rich, customizable widgets for stunning user interfaces",
+    },
+    {
+      icon: <Rocket className="w-6 h-6" />,
+      title: "High Performance",
+      description: "Compiled to native ARM code for optimal performance",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
+    "Dart",
+    "Flutter SDK",
     "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Provider",
+    "Bloc",
+    "GetX",
+    "Dio",
+    "SQLite",
+    "Hive",
+    "Flutter Web",
+    "Flutter Desktop",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Multi-Platform E-commerce",
+      description:
+        "Cross-platform shopping app with real-time inventory and payments",
+      technologies: ["Flutter", "Firebase", "Stripe"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Social Networking App",
+      description:
+        "Feature-rich social platform with chat, posts, and live streaming",
+      technologies: ["Flutter", "WebRTC", "Cloud Firestore"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "IoT Device Controller",
+      description: "Smart home automation app with real-time device control",
+      technologies: ["Flutter", "MQTT", "BLE"],
       rating: 4.9,
     },
   ];
@@ -128,52 +129,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Layers className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Flutter{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Build beautiful, natively compiled applications for mobile,
+                  web, and desktop from a single codebase using Google's Flutter
+                  framework.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      500K+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Apps on Play Store
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      80+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Flutter Apps Built
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      60%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Faster Development
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.7★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Client Satisfaction
                     </div>
                   </div>
                 </div>
@@ -193,16 +194,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Cross-Platform{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                     Excellence
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Flutter enables us to create high-quality applications that
+                  work seamlessly across multiple platforms. With a single
+                  codebase, we deliver consistent user experiences on iOS,
+                  Android, web, and desktop platforms.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Flutter{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +283,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Project{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Showcase
                   </span>
                 </h2>
               </div>
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Build Once, Deploy{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Everywhere
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Start your cross-platform development journey with Flutter and
+                  reach users on every platform.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get Started
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Live Demos
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default Flutter;

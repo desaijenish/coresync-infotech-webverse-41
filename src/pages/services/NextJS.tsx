@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
-  Shield,
-  Users,
+  Globe,
   Rocket,
+  Zap,
+  Server,
+  Search,
+  Target,
   ArrowRight,
   CheckCircle,
   Star,
@@ -20,67 +20,69 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const NextJS = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Server className="w-6 h-6" />,
+      title: "Full-Stack Framework",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Complete React framework with server-side rendering and API routes",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Search className="w-6 h-6" />,
+      title: "SEO Optimized",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Built-in SEO features with automatic sitemap and meta tag generation",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Performance First",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Automatic optimization, code splitting, and image optimization",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Target className="w-6 h-6" />,
+      title: "Production Ready",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Zero-config deployment with Vercel and enterprise-grade features",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Next.js 14",
+    "React 18",
+    "TypeScript",
+    "App Router",
+    "Server Components",
+    "Tailwind CSS",
+    "Prisma",
+    "NextAuth.js",
+    "Vercel",
+    "Edge Runtime",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "E-Commerce Marketplace",
+      description:
+        "High-performance marketplace with SSR, payments, and admin dashboard",
+      technologies: ["Next.js", "Prisma", "Stripe"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "SaaS Platform",
+      description:
+        "Multi-tenant SaaS application with authentication and billing",
+      technologies: ["Next.js", "NextAuth", "Supabase"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Content Management System",
+      description: "Headless CMS with static generation and real-time preview",
+      technologies: ["Next.js", "Sanity", "Vercel"],
       rating: 4.9,
     },
   ];
@@ -128,28 +130,28 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Rocket className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Next.js{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Build production-ready full-stack React applications with
+                  Next.js. Leverage server-side rendering, static generation,
+                  and modern web capabilities for superior performance.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      2.7M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Weekly Downloads
                     </div>
                   </div>
                   <div className="text-center">
@@ -157,23 +159,23 @@ const Android = () => {
                       150+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Next.js Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      95+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Lighthouse Score
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Developer Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +195,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Full-Stack{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    React Framework
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Next.js provides everything you need to build modern web
+                  applications. From automatic code splitting to built-in SEO
+                  optimization, we create applications that perform
+                  exceptionally well and rank high in search engines.
                 </p>
               </div>
 
@@ -250,9 +252,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Next.js{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Technology Stack
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +284,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Production{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Applications
                   </span>
                 </h2>
               </div>
@@ -349,18 +351,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Ship Faster with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Next.js
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Build and deploy production-ready applications with the
+                  world's leading React framework.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Project
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +370,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Case Studies
                   </Button>
                 </div>
               </div>
@@ -382,4 +384,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default NextJS;

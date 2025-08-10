@@ -7,81 +7,79 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
-  Shield,
+  Monitor,
+  Gamepad,
   Users,
-  Rocket,
+  Film,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const PCGames = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Monitor className="w-6 h-6" />,
+      title: "High-Performance Gaming",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
-      description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Develop PC games optimized for performance, graphics, and immersive gameplay.",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      title: "Multiplayer & Online",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Create robust multiplayer experiences with dedicated server architecture and online services.",
+    },
+    {
+      icon: <Film className="w-6 h-6" />,
+      title: "Story-Rich Narratives",
+      description:
+        "Build deep and engaging single-player campaigns with captivating stories and characters.",
+    },
+    {
+      icon: <Gamepad className="w-6 h-6" />,
+      title: "Console Porting",
+      description:
+        "Adapt your PC game for a seamless experience on platforms like PlayStation, Xbox, and Nintendo.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Unreal Engine",
+    "Unity",
+    "C++",
+    "C#",
+    "Steamworks API",
+    "Epic Online Services",
+    "Multiplayer Networking",
+    "Performance Optimization",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Open-World Adventure",
+      description:
+        "An expansive open-world PC game with a rich story and dynamic quests.",
+      technologies: ["Unreal Engine", "C++", "Open-World"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Competitive Shooter",
+      description:
+        "A fast-paced, competitive online multiplayer shooter with custom maps and modes.",
+      technologies: ["Unity", "Multiplayer", "FPS"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
-      rating: 4.9,
+      title: "Strategy Simulation Game",
+      description:
+        "A deep strategy game where players manage an empire from its rise to its fall.",
+      technologies: ["Unity", "Strategy", "Simulation"],
+      rating: 4.7,
     },
   ];
 
@@ -128,52 +126,51 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Monitor className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    PC{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Games
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create immersive and expansive gaming experiences for the
+                  desktop platform, from indie hits to AAA titles.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      20+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      PC Titles
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      9M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Players Reached
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      98%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Positive Reviews
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      15+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Awards & Nominations
                     </div>
                   </div>
                 </div>
@@ -193,16 +190,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Unleash{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Creativity
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  We specialize in developing high-quality PC games that push
+                  the boundaries of technology and storytelling, offering deep
+                  and engaging experiences for players.
                 </p>
               </div>
 
@@ -250,9 +246,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Development Stack
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +278,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Work
                   </span>
                 </h2>
               </div>
@@ -349,18 +345,17 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  The Future of{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    PC Gaming
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Let's create the next big hit in PC gaming together.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get a Quote
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +363,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    See Our Portfolio
                   </Button>
                 </div>
               </div>
@@ -382,4 +377,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default PCGames;

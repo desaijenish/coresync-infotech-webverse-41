@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
+  Globe,
   Code,
   Zap,
-  Shield,
-  Users,
+  Server,
+  Layers,
   Rocket,
   ArrowRight,
   CheckCircle,
@@ -20,68 +20,72 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const JavaScript = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      title: "Modern ES6+",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Latest JavaScript features including async/await, modules, and destructuring",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Server className="w-6 h-6" />,
+      title: "Full-Stack Development",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Frontend and backend development with Node.js and browser JavaScript",
+    },
+    {
+      icon: <Layers className="w-6 h-6" />,
+      title: "Rich Ecosystem",
+      description:
+        "Vast library ecosystem with npm packages for every development need",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Dynamic & Interactive",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
-      description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Create engaging user experiences with real-time interactions",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "ES6+",
+    "Node.js",
+    "Express.js",
+    "DOM API",
+    "Fetch API",
+    "WebSockets",
+    "Async/Await",
+    "Modules",
+    "Webpack",
+    "Babel",
+    "ESLint",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
-      rating: 4.9,
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Interactive Web Application",
+      description:
+        "Complex single-page application with real-time data visualization",
+      technologies: ["Vanilla JS", "Canvas API", "WebSockets"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Node.js API Server",
+      description:
+        "RESTful API with authentication, validation, and database integration",
+      technologies: ["Node.js", "Express", "MongoDB"],
       rating: 4.9,
+    },
+    {
+      title: "Progressive Web App",
+      description:
+        "Offline-capable PWA with service workers and push notifications",
+      technologies: ["JavaScript", "Service Workers", "IndexedDB"],
+      rating: 4.7,
     },
   ];
 
@@ -128,52 +132,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Code className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    JavaScript{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Master the language of the web with modern JavaScript
+                  development. Create dynamic, interactive applications that run
+                  everywhere from browsers to servers.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      #1
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Programming Language
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      300+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      JS Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      1.8M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      NPM Packages
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      69%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Developer Usage
                     </div>
                   </div>
                 </div>
@@ -193,16 +197,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  The Universal{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Language
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  JavaScript powers the modern web and beyond. From interactive
+                  websites to mobile apps, desktop applications, and server-side
+                  solutions, we leverage JavaScript's versatility to build
+                  comprehensive digital experiences.
                 </p>
               </div>
 
@@ -250,9 +254,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  JavaScript{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Technologies
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +286,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  JavaScript{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Solutions
                   </span>
                 </h2>
               </div>
@@ -349,18 +353,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Power Your Vision with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    JavaScript
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Transform your ideas into reality with the world's most
+                  versatile programming language.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Building
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +372,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Explore Solutions
                   </Button>
                 </div>
               </div>
@@ -382,4 +386,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default JavaScript;

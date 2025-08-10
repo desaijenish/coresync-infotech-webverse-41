@@ -7,81 +7,78 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Layers,
+  Sparkles,
+  Film,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
+  Cuboid,
 } from "lucide-react";
 
-const Android = () => {
+const ThreeDAnimation = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Cuboid className="w-6 h-6" />,
+      title: "3D Modeling",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Create high-quality 3D models for characters, environments, and products.",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Layers className="w-6 h-6" />,
+      title: "Realistic Rendering",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Produce lifelike visuals with advanced lighting, textures, and rendering techniques.",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      icon: <Sparkles className="w-6 h-6" />,
+      title: "Product Visualization",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Showcase your products in a dynamic and engaging way with detailed 3D renders and animations.",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Film className="w-6 h-6" />,
+      title: "Visual Effects (VFX)",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Integrate stunning visual effects into your live-action footage or animated scenes.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Blender",
+    "Autodesk Maya",
+    "Cinema 4D",
+    "ZBrush",
+    "Substance Painter",
+    "Unreal Engine",
+    "V-Ray",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Architectural Walkthrough",
+      description:
+        "A realistic 3D animation showcasing an unbuilt architectural project.",
+      technologies: ["Blender", "V-Ray", "Architectural Visualization"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "3D Product Explainer",
+      description:
+        "A detailed 3D animation highlighting the features and benefits of a new product.",
+      technologies: ["Cinema 4D", "Product Modeling"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
-      rating: 4.9,
+      title: "Game Trailer VFX",
+      description:
+        "Creation of stunning visual effects for a video game cinematic trailer.",
+      technologies: ["Unreal Engine", "VFX", "Gaming"],
+      rating: 5.0,
     },
   ];
 
@@ -128,52 +125,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Cuboid className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    3D{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Animation
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create immersive and realistic visual experiences with our
+                  expert 3D animation services, perfect for games, films, and
+                  product marketing.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      100+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      3D Models
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      50+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Animation Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      98%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Quality Satisfaction
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      10+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Awards & Recognition
                     </div>
                   </div>
                 </div>
@@ -193,16 +190,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Depth and{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Realism
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Our 3D animation services offer a new dimension of visual
+                  storytelling, providing an immersive experience for your
+                  audience that is both captivating and memorable.
                 </p>
               </div>
 
@@ -250,9 +246,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Creative Tools
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +278,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Showcase
                   </span>
                 </h2>
               </div>
@@ -349,18 +345,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Visualize Your Ideas in{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    3D
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Step into the future of visual content with our professional
+                  3D animation services.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Get a Quote
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +364,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    Explore Our Work
                   </Button>
                 </div>
               </div>
@@ -382,4 +378,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default ThreeDAnimation;

@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
+  Globe,
+  Palette,
+  Zap,
   Smartphone,
   Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Layers,
   ArrowRight,
   CheckCircle,
   Star,
@@ -20,67 +20,66 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const Tailwind = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
-      description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+      icon: <Palette className="w-6 h-6" />,
+      title: "Utility-First",
+      description: "Build custom designs rapidly with utility classes",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
+      icon: <Smartphone className="w-6 h-6" />,
+      title: "Responsive Design",
+      description: "Mobile-first responsive design with intuitive breakpoints",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Performance Optimized",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Automatic purging removes unused CSS for optimal bundle size",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Layers className="w-6 h-6" />,
+      title: "Component Friendly",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Perfect integration with React, Vue, and component libraries",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Tailwind CSS",
+    "PostCSS",
+    "Autoprefixer",
+    "Headless UI",
+    "Heroicons",
+    "Tailwind UI",
+    "JIT Compiler",
+    "CSS Variables",
+    "Dark Mode",
+    "Custom Plugins",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Design System Implementation",
+      description:
+        "Comprehensive design system with custom Tailwind configuration",
+      technologies: ["Tailwind CSS", "Storybook", "Figma"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "SaaS Landing Page",
+      description: "Conversion-optimized landing page with advanced animations",
+      technologies: ["Tailwind CSS", "Framer Motion", "Next.js"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "E-commerce Interface",
+      description: "Modern shopping experience with custom component library",
+      technologies: ["Tailwind CSS", "Headless UI", "React"],
       rating: 4.9,
     },
   ];
@@ -128,52 +127,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Palette className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Tailwind CSS{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create beautiful, responsive designs faster than ever with
+                  Tailwind CSS. Build custom user interfaces with utility-first
+                  classes and modern design principles.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      3M+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Weekly Downloads
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      180+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Tailwind Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      80%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Faster Development
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Developer Satisfaction
                     </div>
                   </div>
                 </div>
@@ -193,16 +192,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Utility-First{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    CSS Framework
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Tailwind CSS enables rapid UI development with its
+                  utility-first approach. We create stunning, responsive designs
+                  that are maintainable, scalable, and perfectly aligned with
+                  your brand identity.
                 </p>
               </div>
 
@@ -250,9 +249,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Tailwind{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +281,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Design{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Excellence
                   </span>
                 </h2>
               </div>
@@ -349,18 +348,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Design Better with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Tailwind
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Create beautiful, responsive designs faster with the power of
+                  utility-first CSS.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Designing
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +367,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Components
                   </Button>
                 </div>
               </div>
@@ -382,4 +381,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default Tailwind;

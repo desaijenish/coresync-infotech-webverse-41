@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
+  Globe,
+  Component,
   Zap,
-  Shield,
-  Users,
+  Layers,
+  Code,
   Rocket,
   ArrowRight,
   CheckCircle,
@@ -20,67 +20,70 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const ReactJS = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Component className="w-6 h-6" />,
+      title: "Component-Based",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
-      description:
-        "Advanced security features and data protection for enterprise applications",
+        "Reusable UI components for scalable and maintainable applications",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Virtual DOM",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Efficient rendering and optimal performance for complex applications",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Layers className="w-6 h-6" />,
+      title: "Rich Ecosystem",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Extensive library ecosystem with Redux, MobX, and countless tools",
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Modern JavaScript",
+      description:
+        "ES6+, JSX, and TypeScript support for modern development practices",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "React.js",
+    "TypeScript",
+    "Redux Toolkit",
+    "React Router",
+    "React Query",
+    "Styled Components",
+    "Material-UI",
+    "Chakra UI",
+    "Jest",
+    "React Testing Library",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "E-Commerce Dashboard",
+      description:
+        "Advanced admin panel with analytics, inventory, and order management",
+      technologies: ["React", "Redux", "TypeScript"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Social Media Platform",
+      description:
+        "Real-time social networking app with messaging and content sharing",
+      technologies: ["React", "Socket.io", "Material-UI"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Financial Trading Platform",
+      description:
+        "High-performance trading interface with real-time data visualization",
+      technologies: ["React", "D3.js", "WebSocket"],
       rating: 4.9,
     },
   ];
@@ -128,52 +131,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Component className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    React.js{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Build dynamic, interactive user interfaces with React.js.
+                  Create modern web applications that deliver exceptional user
+                  experiences with component-based architecture.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      40%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Of Top Websites
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      200+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      React Projects
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      90%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Performance Score
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Client Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +196,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Modern{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    React Solutions
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  React.js is the foundation of modern web development. Our team
+                  creates scalable, maintainable applications using the latest
+                  React patterns, hooks, and best practices to deliver
+                  outstanding user experiences.
                 </p>
               </div>
 
@@ -250,9 +253,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  React{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Ecosystem
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +285,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Featured{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Projects
                   </span>
                 </h2>
               </div>
@@ -349,18 +352,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Build with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    React.js
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Create powerful, interactive web applications with the world's
+                  most popular JavaScript library.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Building
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -382,4 +385,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default ReactJS;

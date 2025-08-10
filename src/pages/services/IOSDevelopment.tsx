@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
   Smartphone,
-  Code,
+  Apple,
   Zap,
   Shield,
   Users,
@@ -20,67 +20,68 @@ import {
   Clock,
 } from "lucide-react";
 
-const Android = () => {
+const iOS = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Apple className="w-6 h-6" />,
+      title: "Native iOS Experience",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "Built with Swift and SwiftUI for seamless iOS integration and performance",
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      title: "App Store Ready",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Apps designed to meet Apple's strict guidelines and quality standards",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      title: "Premium UI/UX",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Beautiful interfaces following Apple's Human Interface Guidelines",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      title: "High Engagement",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "iOS users show higher engagement and revenue generation rates",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Swift",
+    "SwiftUI",
+    "UIKit",
+    "Xcode",
+    "Core Data",
+    "CloudKit",
+    "AVFoundation",
+    "Core Animation",
+    "TestFlight",
+    "App Store Connect",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Premium Banking App",
+      description:
+        "Secure financial app with biometric authentication and real-time transactions",
+      technologies: ["Swift", "Face ID", "Core Data"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Fitness Tracking Platform",
+      description: "Health app integrated with Apple Watch and HealthKit",
+      technologies: ["SwiftUI", "HealthKit", "WatchOS"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
+      title: "Enterprise Communication",
+      description: "Corporate messaging app with end-to-end encryption",
+      technologies: ["Swift", "CloudKit", "Push Notifications"],
       rating: 4.9,
     },
   ];
@@ -128,52 +129,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Apple className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    iOS{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
                       Development
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  Create stunning, high-performance iOS applications that
+                  captivate users and deliver exceptional experiences on iPhone,
+                  iPad, and Apple Watch platforms.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
+                      1.8B+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Android Users
+                      Active iOS Devices
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      150+
+                      120+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      iOS Apps Built
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      95%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      App Store Approval
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      User Rating
                     </div>
                   </div>
                 </div>
@@ -193,16 +194,16 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Premium iOS{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Experience
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  Our iOS development team specializes in creating native
+                  applications using Swift and SwiftUI. We focus on delivering
+                  premium user experiences that align with Apple's design
+                  philosophy and technical excellence standards.
                 </p>
               </div>
 
@@ -250,9 +251,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  iOS Development{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Stack
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +283,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Featured{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Projects
                   </span>
                 </h2>
               </div>
@@ -349,18 +350,18 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Launch Your{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    iOS App
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Transform your idea into a premium iOS application that stands
+                  out in the App Store.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Start Development
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +369,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    View Case Studies
                   </Button>
                 </div>
               </div>
@@ -382,4 +383,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default iOS;

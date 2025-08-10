@@ -7,81 +7,78 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
-  Smartphone,
-  Code,
-  Zap,
-  Shield,
-  Users,
-  Rocket,
+  Video,
+  Camera,
+  Edit,
+  Mic,
   ArrowRight,
   CheckCircle,
   Star,
   Trophy,
-  Clock,
 } from "lucide-react";
 
-const Android = () => {
+const VideoProduction = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const features = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Native Performance",
+      icon: <Camera className="w-6 h-6" />,
+      title: "Full Production Service",
       description:
-        "Built with Kotlin and Java for optimal performance and platform integration",
+        "From concept and scripting to filming and post-production, we handle it all.",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Security First",
+      icon: <Edit className="w-6 h-6" />,
+      title: "Professional Editing",
       description:
-        "Advanced security features and data protection for enterprise applications",
+        "Expert video editing, color grading, and sound design to create a polished final product.",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Development",
+      icon: <Mic className="w-6 h-6" />,
+      title: "High-Quality Sound",
       description:
-        "Rapid prototyping and iterative development for quick time-to-market",
+        "Ensure crystal-clear audio with professional recording, mixing, and mastering.",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Material Design",
+      icon: <Video className="w-6 h-6" />,
+      title: "Corporate & Event Videos",
       description:
-        "Beautiful, intuitive interfaces following Google's Material Design guidelines",
+        "Capture key moments and tell your company's story with compelling corporate and event videos.",
     },
   ];
 
   const technologies = [
-    "Kotlin",
-    "Java",
-    "Android Studio",
-    "Jetpack Compose",
-    "Room Database",
-    "Retrofit",
-    "Firebase",
-    "Material Design",
-    "Dagger/Hilt",
-    "Coroutines",
+    "Adobe Premiere Pro",
+    "DaVinci Resolve",
+    "Final Cut Pro",
+    "Cinema Cameras",
+    "Audio Engineering",
+    "Color Grading",
+    "Visual Effects",
   ];
 
   const portfolio = [
     {
-      title: "E-commerce Mobile App",
-      description: "Feature-rich shopping app with payment gateway integration",
-      technologies: ["Kotlin", "Firebase", "Stripe"],
+      title: "Company Profile Video",
+      description:
+        "A cinematic video highlighting a company's mission, team, and achievements.",
+      technologies: ["Corporate Video", "Interviews", "Editing"],
       rating: 4.9,
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant medical app for patient management",
-      technologies: ["Java", "Room", "Security"],
+      title: "Event Highlight Reel",
+      description:
+        "A fast-paced, dynamic video capturing the best moments from a corporate event.",
+      technologies: ["Event Videography", "Music Sync", "Color Grading"],
       rating: 4.8,
     },
     {
-      title: "Social Media Platform",
-      description: "Real-time messaging and content sharing application",
-      technologies: ["Kotlin", "WebRTC", "Push Notifications"],
-      rating: 4.9,
+      title: "Product Launch Video",
+      description:
+        "An exciting video showcasing a new product with high-end visuals and sound.",
+      technologies: ["Product Videography", "VFX", "Sound Design"],
+      rating: 5.0,
     },
   ];
 
@@ -128,52 +125,52 @@ const Android = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Smartphone className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Video className="w-12 h-12 text-coresync-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
-                    Android{" "}
+                    Video{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                      Development
+                      Production
                     </span>
                   </h1>
                 </div>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-                  Build powerful, scalable Android applications that deliver
-                  exceptional user experiences and drive business growth on the
-                  world's most popular mobile platform.
+                  From concept to completion, we deliver professional video
+                  production services that capture your audience and tell your
+                  story with impact.
                 </p>
 
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      2.8B+
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Android Users
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
                       150+
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Apps Developed
+                      Projects Completed
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      99.9%
+                      99%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Uptime Rate
+                      Timely Delivery
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-coresync-primary-light mb-2">
-                      4.8★
+                      98%
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Average Rating
+                      Client Satisfaction
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      10+
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Awards Won
                     </div>
                   </div>
                 </div>
@@ -193,16 +190,15 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Native Android{" "}
+                  Captivating{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Excellence
+                    Stories
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Our Android development expertise spans from native app
-                  development using Kotlin and Java to modern Jetpack Compose UI
-                  frameworks. We create high-performance applications that
-                  leverage the full potential of the Android ecosystem.
+                  From corporate videos to brand commercials, our team handles
+                  every aspect of video production, ensuring a high-quality,
+                  polished final product that meets your objectives.
                 </p>
               </div>
 
@@ -250,9 +246,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Technologies &{" "}
+                  Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Tools
+                    Production Gear
                   </span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -282,9 +278,9 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Success{" "}
+                  Featured{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Stories
+                    Work
                   </span>
                 </h2>
               </div>
@@ -349,18 +345,17 @@ const Android = () => {
                 }`}
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Ready to Build Your{" "}
+                  Tell Your Story Through{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                    Android App?
+                    Video
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Let's create a powerful Android application that engages users
-                  and drives your business forward.
+                  Get in touch to bring your vision to the screen.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="px-8 py-6 text-lg">
-                    Start Your Project
+                    Book a Consultation
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -368,7 +363,7 @@ const Android = () => {
                     size="lg"
                     className="px-8 py-6 text-lg"
                   >
-                    View Portfolio
+                    See Our Services
                   </Button>
                 </div>
               </div>
@@ -382,4 +377,4 @@ const Android = () => {
   );
 };
 
-export default Android;
+export default VideoProduction;
