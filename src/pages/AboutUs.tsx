@@ -15,14 +15,14 @@ const AboutUs = () => {
       icon: Target,
       title: "Mission",
       content:
-        "To empower businesses through innovative technology solutions that drive growth, efficiency, and digital transformation in an ever-evolving technological landscape.",
+        "To create genuine, innovative, and secure digital solutions that help businesses grow, adapt, and lead in a constantly changing world. We strive to collaborate, inspire, and safeguard every digital journey we touch.",
       gradient: "from-coresync-primary-light to-orange-500",
     },
     {
       icon: Shield,
       title: "Principles",
       content:
-        "We believe in transparency, quality craftsmanship, and ethical practices. Every project is built with integrity, attention to detail, and a commitment to exceeding expectations.",
+      "We commit to being your dependable technology partner, crafting solutions that serve your needs today and grow with your vision for tomorrow.",
       gradient: "from-coresync-primary-dark to-blue-500",
     },
     {
@@ -195,10 +195,11 @@ const AboutUs = () => {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                We are a passionate team of technologists, designers, and
-                innovators dedicated to transforming businesses through
-                cutting-edge digital solutions. Founded with a vision to bridge
-                the gap between technology and business success.
+              Created with a spirit of genuineness and innovation, Coresync Infotech is always ready 
+              to collaborate and bring great ideas to life. We believe in building an authentic and 
+              safe digital world for every user — one where creativity thrives, technology empowers, 
+              and trust is at the core. It’s time to protect and elevate your digital presence, and 
+              we’re here to make it happen.
               </p>
             </motion.div>
           </div>

@@ -14,14 +14,14 @@ export interface TeamMember {
 export const teamData: TeamMember[] = [
   {
     id: "t1",
-    name: "Aisha Kapoor",
-    role: "Head of Engineering",
+    name: "Change It",
+    role: "UI/UX Designer",
     photo: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=400&h=400&fit=crop&crop=face",
     tagline: "Architecting scalable systems",
     bio: "Aisha leads our engineering team with 10+ years of experience building enterprise applications. She specializes in React, Node.js, and cloud architecture, ensuring our solutions are both scalable and maintainable.",
-    skills: ["React", "Node.js", "AWS", "System Design", "Team Leadership"],
-    linkedin: "https://linkedin.com/in/aisha-kapoor",
-    email: "aisha@coresync.com",
+    skills: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "UI Design and Research", "Team Leadership"],
+    linkedin: "",
+    email: "",
     projects: [
       "Led development of enterprise CRM serving 100K+ users",
       "Architected microservices infrastructure reducing costs by 40%",
@@ -30,12 +30,12 @@ export const teamData: TeamMember[] = [
   },
   {
     id: "t2",
-    name: "Marcus Chen",
-    role: "Product Manager",
+    name: "Avnit Kukadiya",
+    role: "Sr. Android Developer",
     photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     tagline: "Bridging vision and execution",
     bio: "Marcus transforms complex business requirements into user-friendly products. With his background in both technology and business strategy, he ensures every feature delivers real value to our clients.",
-    skills: ["Product Strategy", "Agile", "User Research", "Analytics", "Stakeholder Management"],
+    skills: ["Android", "Java/Kotlin", "Project Management", "Analytics", "Stakeholder Management"],
     linkedin: "https://linkedin.com/in/marcus-chen",
     email: "marcus@coresync.com",
     projects: [
@@ -46,7 +46,7 @@ export const teamData: TeamMember[] = [
   },
   {
     id: "t3",
-    name: "Priya Sharma",
+    name: "DHruvisha Khunt",
     role: "UI/UX Designer",
     photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
     tagline: "Crafting delightful experiences",
