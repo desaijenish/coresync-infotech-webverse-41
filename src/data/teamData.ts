@@ -11,15 +11,16 @@ export interface TeamMember {
   projects?: string[];
 }
 
+
 export const teamData: TeamMember[] = [
   {
     id: "t1",
-    name: "Change It",
-    role: "UI/UX Designer",
-    photo: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=400&h=400&fit=crop&crop=face",
+    name: "Tirth Bhingradiya",
+    role: "Sr. Backend Developer",
+    photo: "/assets/team/em_TirthBhingradiya.png",
     tagline: "Architecting scalable systems",
     bio: "Aisha leads our engineering team with 10+ years of experience building enterprise applications. She specializes in React, Node.js, and cloud architecture, ensuring our solutions are both scalable and maintainable.",
-    skills: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "UI Design and Research", "Team Leadership"],
+    skills: ["Java Spring Boot", "Hiber-Net", "MySQL", "", ""],
     linkedin: "",
     email: "",
     projects: [
@@ -32,7 +33,7 @@ export const teamData: TeamMember[] = [
     id: "t2",
     name: "Avnit Kukadiya",
     role: "Sr. Android Developer",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    photo: "/assets/team/em_AvnitKukadiya.jpeg",
     tagline: "Bridging vision and execution",
     bio: "Marcus transforms complex business requirements into user-friendly products. With his background in both technology and business strategy, he ensures every feature delivers real value to our clients.",
     skills: ["Android", "Java/Kotlin", "Project Management", "Analytics", "Stakeholder Management"],
@@ -46,9 +47,9 @@ export const teamData: TeamMember[] = [
   },
   {
     id: "t3",
-    name: "DHruvisha Khunt",
-    role: "UI/UX Designer",
-    photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    name: "Dhruvisha Khunt",
+    role: "Sr. UI/UX Designer",
+    photo: "/assets/team/em_DhruvishaKhunt.jpg",
     tagline: "Crafting delightful experiences",
     bio: "Priya creates intuitive and beautiful interfaces that users love. Her design philosophy combines aesthetic appeal with usability, ensuring every interaction feels natural and purposeful.",
     skills: ["UI Design", "UX Research", "Figma", "Prototyping", "Design Systems"],
@@ -78,9 +79,9 @@ export const teamData: TeamMember[] = [
   },
   {
     id: "t5",
-    name: "Sarah Johnson",
-    role: "AI/ML Engineer",
-    photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
+    name: "Isha Thummar",
+    role: "UI/UX Designer",
+    photo: "/assets/team/em_IshaThummar.jpg",
     tagline: "Intelligence meets innovation",
     bio: "Sarah integrates artificial intelligence and machine learning into our solutions, creating smarter applications that learn and adapt. Her work helps clients automate processes and gain valuable insights from their data.",
     skills: ["Python", "TensorFlow", "Machine Learning", "Data Science", "AI Integration"],
@@ -94,12 +95,12 @@ export const teamData: TeamMember[] = [
   },
   {
     id: "t6",
-    name: "Alex Thompson",
-    role: "Quality Assurance Lead",
+    name: "Tirth Bhingradiya",
+    role: "Sr. Backend Developer",
     photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
     tagline: "Ensuring excellence in every release",
     bio: "Alex maintains the highest quality standards across all our projects. With expertise in both manual and automated testing, he ensures our applications are reliable, secure, and performant before they reach our clients.",
-    skills: ["Test Automation", "Selenium", "Performance Testing", "Security Testing", "CI/CD"],
+    skills: ["Java Spring Boot", "Hiber-Net", "MySQL", "Security Testing", "CI/CD"],
     linkedin: "https://linkedin.com/in/alex-thompson",
     email: "alex@coresync.com",
     projects: [

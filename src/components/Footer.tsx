@@ -44,14 +44,26 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Info */}
           <div className="space-y-5">
-            <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-2 group">
+                  <img
+                    src={"/assets/logo/icon.png"}
+                    alt="Coresync Icon"
+                    className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <img
+                    src={"/assets/logo/LogoText.png"}
+                    alt="Coresync Infotech"
+                    className="h-8 object-contain group-hover:brightness-110 transition-all duration-300"
+                  />
+                </Link>
+            {/* <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
               <span className="text-xl font-bold text-foreground">
                 Coresync Infotech
               </span>
-            </div>
+            </div> */}
             <p className="text-muted-foreground leading-relaxed">
               Transforming businesses through innovative technology solutions.
               Your trusted partner in digital transformation.
