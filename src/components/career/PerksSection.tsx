@@ -23,7 +23,7 @@ const PerksSection = () => {
     {
       icon: Coffee,
       title: 'Great Benefits',
-      description: 'Comprehensive health coverage and wellness programs'
+      description: 'Comprehensive health and wellness programs'
     },
     {
       icon: Home,
@@ -112,3 +112,6 @@ const PerksSection = () => {
 };
 
 export default PerksSection;
+
+// There is some scrolling issue to check.
+// On clcik of apply now there should be a dialog box.

@@ -9,35 +9,34 @@ const HIRING_STEPS = [
     id: 1,
     icon: FileText,
     title: "Apply",
-    description:
-      "Apna resume aur cover letter ke saath application jama karein.",
+    description: "Submit your application with your resume and cover letter.",
   },
   {
     id: 2,
     icon: Users,
     title: "Screening",
-    description: "Aapke application aur qualifications ka prarambhik review.",
+    description: "Initial review of your application and qualifications.",
   },
   {
     id: 3,
     icon: MessageCircle,
     title: "Interview",
-    description: "Hamari team ke saath technical aur cultural fit assessment.",
+    description: "Technical and cultural fit assessment with our team.",
   },
   {
     id: 4,
     icon: Award,
     title: "Offer",
-    description: "Aapka personalized offer package praapt karein.",
+    description: "Receive your personalized offer package.",
   },
   {
     id: 5,
     icon: HandHeart,
     title: "Onboard",
-    description:
-      "Team mein aapka swagat hai! Hamare saath apni yatra shuru karein.",
+    description: "Welcome to the team! Start your journey with us.",
   },
 ];
+
 
 const TimelineDot = ({ id }) => {
   const ref = React.useRef(null);

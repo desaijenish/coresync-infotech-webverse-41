@@ -41,88 +41,123 @@ const Career = () => {
   const jobListings = [
     {
       id: 1,
-      title: "Frontend Developer",
+      title: "React.js Frontend Intern",
       location: "Remote / Hybrid",
-      type: "Full-Time",
-      tagline: "Shape the future of web experiences",
+      type: "Internship",
+      tagline: "Kickstart your frontend development journey",
       description:
-        "Join our team to build cutting-edge web applications using React, TypeScript, and modern frameworks.",
+        "Join our development team as a React.js Intern and gain hands-on experience by working on real-life projects. This is a great opportunity to learn, build, and grow your skills in modern frontend technologies.",
       responsibilities: [
-        "Develop responsive web applications using React and TypeScript",
-        "Collaborate with designers to implement pixel-perfect UI/UX designs",
-        "Optimize applications for maximum speed and scalability",
-        "Write clean, maintainable, and well-documented code",
+        "Assist in developing responsive web interfaces using React.js",
+        "Work closely with senior developers to implement UI components",
+        "Contribute to improving the user experience in real-world applications",
+        "Write clean and maintainable code under guidance",
       ],
       requirements: [
-        "3+ years of experience with React and TypeScript",
-        "Strong understanding of modern CSS and responsive design",
-        "Experience with state management (Redux, Zustand, etc.)",
-        "Knowledge of testing frameworks (Jest, Cypress)",
+        "Basic understanding of React.js and JavaScript",
+        "Familiarity with HTML, CSS, and responsive design",
+        "Eagerness to learn modern frontend tools and workflows",
+        "Good problem-solving skills and willingness to collaborate",
+        "Opportunity to gain hands-on experience and work on real-life projects",
       ],
     },
     {
       id: 2,
-      title: "AI/ML Engineer",
-      location: "On-site",
-      type: "Full-Time",
-      tagline: "Pioneer the next generation of intelligent solutions",
+      title: "Java Spring Boot Intern",
+      location: "Remote / Hybrid",
+      type: "Internship",
+      tagline: "Kickstart your backend development journey",
       description:
-        "Lead AI initiatives and develop machine learning solutions that drive innovation across our products.",
+        "Join our backend team as a Java Spring Boot Intern and gain hands-on experience by working on real-life projects. Learn how modern backend systems are built and contribute to actual production-level applications.",
       responsibilities: [
-        "Design and implement machine learning models",
-        "Develop AI-powered features for web and mobile applications",
-        "Collaborate with cross-functional teams on AI strategy",
-        "Research and evaluate new AI technologies and frameworks",
+        "Assist in developing RESTful APIs using Java and Spring Boot",
+        "Work closely with senior developers to understand backend architecture",
+        "Participate in writing clean, maintainable, and well-documented code",
+        "Support debugging, testing, and improving existing features",
+        "Contribute to real-world backend development tasks",
       ],
       requirements: [
-        "Master's degree in Computer Science, AI, or related field",
-        "5+ years of experience in machine learning and AI",
-        "Proficiency in Python, TensorFlow, and PyTorch",
-        "Experience with cloud AI services (AWS, Google Cloud, Azure)",
-      ],
+        "Basic understanding of Java and object-oriented programming",
+        "Familiarity with Spring Boot fundamentals (Controllers, REST API, etc.)",
+        "Knowledge of SQL and databases is a plus",
+        "Eagerness to learn backend development and work on real-life projects",
+        "Strong problem-solving mindset and willingness to collaborate",
+      ]
     },
     {
       id: 3,
-      title: "Mobile App Developer",
-      location: "Remote",
+      title: "Java Spring Boot Developer",
+      location: "Remote / Hybrid",
       type: "Full-Time",
-      tagline: "Create mobile experiences that matter",
+      tagline: "Build scalable and robust backend systems",
       description:
-        "Create exceptional mobile experiences using React Native and Flutter for iOS and Android platforms.",
+        "We are looking for an experienced Java Spring Boot Developer to build, optimize, and maintain scalable backend systems. Join our team to work on high-performance applications and contribute to modern backend architectures.",
       responsibilities: [
-        "Develop cross-platform mobile applications",
-        "Implement native features and third-party integrations",
-        "Ensure app performance and optimization",
-        "Collaborate with backend teams for API integration",
+        "Develop and maintain RESTful APIs using Java and Spring Boot",
+        "Design scalable and efficient backend architectures",
+        "Integrate databases and optimize queries for performance",
+        "Write clean, maintainable, and well-tested code",
+        "Collaborate with frontend and DevOps teams to deliver high-quality products",
+        "Troubleshoot production issues and implement reliable solutions"
       ],
       requirements: [
-        "4+ years of mobile development experience",
-        "Expertise in React Native or Flutter",
-        "Knowledge of native iOS/Android development",
-        "Experience with app store deployment processes",
-      ],
+        "2+ years of experience with Java and Spring Boot",
+        "Strong understanding of RESTful API development and microservices",
+        "Experience with SQL/NoSQL databases",
+        "Knowledge of security, authentication, and API best practices",
+        "Familiarity with testing frameworks like JUnit and Mockito",
+        "Ability to work independently and in a collaborative team environment"
+      ]
     },
     {
       id: 4,
-      title: "Software Engineering Intern",
-      location: "Hybrid",
+      title: "Python FastAPI Intern",
+      location: "Remote / Hybrid",
       type: "Internship",
-      tagline: "Launch your tech career with us",
+      tagline: "Kickstart your backend development journey with FastAPI",
       description:
-        "Kickstart your career with hands-on experience in full-stack development and modern technologies.",
+        "Join our backend team as a Python FastAPI Intern and gain hands-on experience by working on real-life, production-focused projects. Learn how modern, high-performance APIs are built using FastAPI.",
       responsibilities: [
-        "Assist in developing web and mobile applications",
-        "Learn modern development frameworks and best practices",
-        "Participate in code reviews and team meetings",
-        "Work on real projects with mentorship from senior developers",
+        "Assist in building RESTful APIs using Python and FastAPI",
+        "Work with senior developers to understand backend logic and architecture",
+        "Write clean, readable, and maintainable code under guidance",
+        "Support debugging, testing, and documentation tasks",
+        "Contribute to real-world backend tasks and project modules"
       ],
       requirements: [
-        "Currently pursuing Computer Science or related degree",
-        "Basic knowledge of JavaScript, HTML, and CSS",
-        "Familiarity with React or other modern frameworks",
-        "Strong problem-solving skills and eagerness to learn",
-      ],
+        "Basic understanding of Python programming",
+        "Familiarity with API development and FastAPI fundamentals is a plus",
+        "Understanding of SQL/NoSQL databases is helpful",
+        "Eagerness to learn backend technologies and work on real-life projects",
+        "Good communication skills and willingness to collaborate"
+      ]
     },
+    {
+      id: 5,
+      title: "Python FastAPI Developer",
+      location: "Remote / Hybrid",
+      type: "Full-Time",
+      tagline: "Build high-performance backend systems",
+      description:
+        "We are seeking a skilled Python FastAPI Developer to design, develop, and optimize high-performance backend applications. Join our team and work on scalable, modern API-driven systems.",
+      responsibilities: [
+        "Develop and maintain high-performance APIs using Python and FastAPI",
+        "Design scalable backend architectures and application logic",
+        "Integrate databases and optimize queries for performance",
+        "Write clean, efficient, and testable code",
+        "Collaborate with frontend, DevOps, and QA teams",
+        "Troubleshoot and resolve production issues efficiently"
+      ],
+      requirements: [
+        "2+ years of experience with Python backend development",
+        "Strong understanding of FastAPI and REST API principles",
+        "Experience with SQL/NoSQL databases",
+        "Knowledge of authentication, authorization, and API best practices",
+        "Familiarity with testing tools like PyTest",
+        "Ability to work independently and in a collaborative environment"
+      ]
+    }
+
   ];
 
   const filteredJobs = jobListings.filter((job) => {

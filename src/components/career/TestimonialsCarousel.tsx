@@ -8,31 +8,32 @@ const TestimonialsCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Chen",
-      role: "Frontend Developer",
-      image: "/placeholder.svg",
-      quote: "Joining Coresync has been transformative for my career. The collaborative environment and cutting-edge projects have helped me grow exponentially as a developer.",
-      rating: 5
-    },
-    {
-      id: 2,
-      name: "Michael Rodriguez",
-      role: "AI/ML Engineer",
-      image: "/placeholder.svg", 
-      quote: "The innovative culture at Coresync is unmatched. I get to work on groundbreaking AI solutions while being supported by an amazing team of experts.",
-      rating: 5
-    },
-    {
-      id: 3,
-      name: "Emily Johnson",
-      role: "UI/UX Designer",
-      image: "/placeholder.svg",
-      quote: "Coresync values creativity and user-centered design. The mentorship I've received has elevated my design thinking and problem-solving skills significantly.",
-      rating: 5
-    }
-  ];
+  {
+    id: 1,
+    name: "Avnit Kukadiya",
+    role: "Android Developer",
+    image: "/assets/team/em_AvnitKukadiya.jpeg",
+    quote: "Joining Coresync has been transformative for my career. The collaborative environment and cutting-edge projects have helped me grow exponentially as a developer.",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Tirth Bhingradiya",
+    role: "Backend Developer",
+    image: "/assets/team/em_TirthBhingradiya.png", 
+    quote: "The innovative culture at Coresync is unmatched. I get to work on groundbreaking backend solutions while being supported by an amazing team of experts.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Dhruvisha Khunt",
+    role: "UI/UX Developer",
+    image: "/assets/team/em_DhruvishaKhunt.jpg",
+    quote: "Coresync values creativity and user-centered design. The mentorship I've received has elevated my design thinking and problem-solving skills significantly.",
+    rating: 5
+  }
+];
+
 
   // Auto-rotate testimonials
   useEffect(() => {
