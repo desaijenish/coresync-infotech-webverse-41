@@ -76,10 +76,10 @@ const SpeculativeApplicationForm = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Card className="bg-card/80 backdrop-blur-sm border-2 border-coresync-primary-light/20">
+          <Card className="bg-card/80 backdrop-blur-sm border-2 border-Coresyncro-primary-light/20">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl font-bold">
-                Not Seeing Your <span className="text-coresync-primary-light">Dream Role?</span>
+                Not Seeing Your <span className="text-Coresyncro-primary-light">Dream Role?</span>
               </CardTitle>
               <p className="text-muted-foreground">
                 Tell us about yourself and the role you're looking for. We'll keep you in mind for future opportunities!
@@ -141,7 +141,7 @@ const SpeculativeApplicationForm = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark hover:scale-105 transition-transform duration-200"
+                    className="w-full bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark hover:scale-105 transition-transform duration-200"
                   >
                     {isSubmitting ? (
                       <div className="flex items-center space-x-2">

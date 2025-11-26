@@ -55,7 +55,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'coresync-primary': {
+				'Coresyncro-primary': {
 					light: '#EC6E00',
 					dark: '#4592FF'
 				}

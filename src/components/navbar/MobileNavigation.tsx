@@ -29,7 +29,7 @@ const MobileNavigation = ({ navLinks, serviceCategories, isOpen, onClose }: Mobi
             key={link.name}
             to={link.href}
             onClick={onClose}
-            className="text-foreground hover:text-coresync-primary-light transition-all duration-300 py-3 px-4 rounded-lg hover:bg-muted/30 font-medium min-h-[44px] flex items-center touch-manipulation"
+            className="text-foreground hover:text-Coresyncro-primary-light transition-all duration-300 py-3 px-4 rounded-lg hover:bg-muted/30 font-medium min-h-[44px] flex items-center touch-manipulation"
           >
             {link.name}
           </Link>
@@ -39,7 +39,7 @@ const MobileNavigation = ({ navLinks, serviceCategories, isOpen, onClose }: Mobi
         <div className="space-y-2">
           <button
             onClick={() => setIsServicesOpen(!isServicesOpen)}
-            className="w-full flex items-center justify-between font-semibold text-foreground py-3 px-4 bg-gradient-to-r from-coresync-primary-light/10 to-coresync-primary-dark/10 rounded-lg hover:from-coresync-primary-light/20 hover:to-coresync-primary-dark/20 transition-all duration-300 min-h-[44px] touch-manipulation"
+            className="w-full flex items-center justify-between font-semibold text-foreground py-3 px-4 bg-gradient-to-r from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10 rounded-lg hover:from-Coresyncro-primary-light/20 hover:to-Coresyncro-primary-dark/20 transition-all duration-300 min-h-[44px] touch-manipulation"
           >
             <span>Services</span>
             <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -51,7 +51,7 @@ const MobileNavigation = ({ navLinks, serviceCategories, isOpen, onClose }: Mobi
                 <div key={category} className="ml-2 space-y-1">
                   <button
                     onClick={() => toggleServiceCategory(category)}
-                    className="w-full flex items-center justify-between font-medium text-sm text-coresync-primary-light py-2 px-3 bg-muted/20 rounded-lg hover:bg-muted/40 transition-all duration-300 min-h-[40px] touch-manipulation"
+                    className="w-full flex items-center justify-between font-medium text-sm text-Coresyncro-primary-light py-2 px-3 bg-muted/20 rounded-lg hover:bg-muted/40 transition-all duration-300 min-h-[40px] touch-manipulation"
                   >
                     <span className="text-left">{category}</span>
                     <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${expandedService === category ? 'rotate-90' : ''}`} />
@@ -64,7 +64,7 @@ const MobileNavigation = ({ navLinks, serviceCategories, isOpen, onClose }: Mobi
                           key={tech} 
                           className="text-xs text-muted-foreground py-2 px-3 hover:text-foreground transition-colors hover:bg-muted/20 rounded-md min-h-[36px] flex items-center touch-manipulation"
                         >
-                          <span className="w-1.5 h-1.5 bg-coresync-primary-dark/50 rounded-full mr-3 flex-shrink-0"></span>
+                          <span className="w-1.5 h-1.5 bg-Coresyncro-primary-dark/50 rounded-full mr-3 flex-shrink-0"></span>
                           {tech}
                         </div>
                       ))}

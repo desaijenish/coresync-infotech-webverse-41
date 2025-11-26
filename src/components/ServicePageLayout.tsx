@@ -38,7 +38,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-center lg:text-left"
               >
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                   {title}
                 </span>
               </motion.h1>
@@ -59,7 +59,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <h3 className="text-2xl font-bold mb-4 text-coresync-primary-light">Key Benefits</h3>
+              <h3 className="text-2xl font-bold mb-4 text-Coresyncro-primary-light">Key Benefits</h3>
               <ul className="space-y-3">
                 {benefits.map((benefit, index) => (
                   <motion.li
@@ -69,7 +69,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                     transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
                     className="flex items-center space-x-3"
                   >
-                    <div className="w-2 h-2 bg-coresync-primary-light rounded-full flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full flex-shrink-0"></div>
                     <span className="text-foreground">{benefit}</span>
                   </motion.li>
                 ))}
@@ -82,7 +82,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
             >
-              <h3 className="text-2xl font-bold mb-4 text-coresync-primary-dark">Technologies We Use</h3>
+              <h3 className="text-2xl font-bold mb-4 text-Coresyncro-primary-dark">Technologies We Use</h3>
               <div className="flex flex-wrap gap-2">
                 {techStack.map((tech, index) => (
                   <motion.span
@@ -90,7 +90,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: 1.2 + index * 0.05 }}
-                    className="px-3 py-1 bg-coresync-primary-dark/10 text-coresync-primary-dark rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-Coresyncro-primary-dark/10 text-Coresyncro-primary-dark rounded-full text-sm font-medium"
                   >
                     {tech}
                   </motion.span>
@@ -108,7 +108,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
               <Button
                 size="lg"
                 onClick={onContactClick}
-                className="bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl"
               >
                 Get a Quote
               </Button>
@@ -123,14 +123,14 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
             className="flex justify-center order-first lg:order-last"
           >
             <div className="relative">
-              <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-3xl flex items-center justify-center backdrop-blur-sm">
-                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 text-coresync-primary-light dark:text-coresync-primary-dark">
+              <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-3xl flex items-center justify-center backdrop-blur-sm">
+                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 text-Coresyncro-primary-light dark:text-Coresyncro-primary-dark">
                   {illustration}
                 </div>
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-coresync-primary-light rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-coresync-primary-dark rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-Coresyncro-primary-light rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-Coresyncro-primary-dark rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
             </div>
           </motion.div>
         </div>

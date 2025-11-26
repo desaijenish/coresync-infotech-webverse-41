@@ -6,7 +6,7 @@ const BackgroundEffects = () => {
     <div className="absolute inset-0 pointer-events-none z-0">
       {/* Binary Code Grid */}
       <div className="absolute inset-0 opacity-5 hidden md:block">
-        <div className="grid grid-cols-12 gap-4 h-full text-xs font-mono text-coresync-primary-light">
+        <div className="grid grid-cols-12 gap-4 h-full text-xs font-mono text-Coresyncro-primary-light">
           {Array.from({ length: 144 }).map((_, i) => (
             <div
               key={i}
@@ -21,20 +21,20 @@ const BackgroundEffects = () => {
 
       {/* Floating Shapes */}
       <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 opacity-10">
-        <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-45 animate-float"></div>
+        <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-45 animate-float"></div>
       </div>
       <div className="absolute top-40 right-4 sm:right-20 w-12 h-12 sm:w-24 sm:h-24 opacity-10">
-        <div className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float-delayed"></div>
+        <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float-delayed"></div>
       </div>
       <div className="absolute bottom-40 left-1/4 w-10 h-10 sm:w-20 sm:h-20 opacity-10">
         <div
-          className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark clip-path-triangle animate-float"
+          className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark clip-path-triangle animate-float"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
       <div className="absolute top-60 right-1/3 w-8 h-8 sm:w-16 sm:h-16 opacity-10">
         <div
-          className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light transform rotate-12 animate-float"
+          className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light transform rotate-12 animate-float"
           style={{ animationDelay: "0.5s" }}
         ></div>
       </div>

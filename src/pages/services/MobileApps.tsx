@@ -150,11 +150,11 @@ const MobileAppDevelopment = () => {
         {/* Animated Background Shapes */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 opacity-10">
-            <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-45 animate-float"></div>
+            <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-45 animate-float"></div>
           </div>
           <div className="absolute top-40 right-20 w-24 h-24 opacity-10">
             <div
-              className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float"
+              className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float"
               style={{ animationDelay: "1s" }}
             ></div>
           </div>
@@ -177,7 +177,7 @@ const MobileAppDevelopment = () => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Mobile App{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Development
                   </span>
                 </h1>
@@ -191,7 +191,7 @@ const MobileAppDevelopment = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       75+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -199,7 +199,7 @@ const MobileAppDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       4.8★
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -207,7 +207,7 @@ const MobileAppDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       2M+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -215,7 +215,7 @@ const MobileAppDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       98%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -240,7 +240,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-8">
                   Transform Ideas Into{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Mobile Reality
                   </span>
                 </h2>
@@ -286,7 +286,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Mobile Development{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Technologies
                   </span>
                 </h2>
@@ -308,10 +308,10 @@ const MobileAppDevelopment = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
+                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-Coresyncro-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg group-hover:from-coresync-primary-light/30 group-hover:to-coresync-primary-dark/30 transition-all duration-300">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg group-hover:from-Coresyncro-primary-light/30 group-hover:to-Coresyncro-primary-dark/30 transition-all duration-300">
                             {service.icon}
                           </div>
                           <div className="flex items-center gap-2">
@@ -322,7 +322,7 @@ const MobileAppDevelopment = () => {
                           </div>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300">
+                        <h3 className="text-xl font-bold mb-3 group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                           {service.name}
                         </h3>
 
@@ -355,7 +355,7 @@ const MobileAppDevelopment = () => {
                         </div>
 
                         <Link to={service.link}>
-                          <Button className="w-full group-hover:bg-coresync-primary-light group-hover:text-white transition-all duration-300">
+                          <Button className="w-full group-hover:bg-Coresyncro-primary-light group-hover:text-white transition-all duration-300">
                             Learn More
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
@@ -381,7 +381,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Featured{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Case Studies
                   </span>
                 </h2>
@@ -401,8 +401,8 @@ const MobileAppDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Smartphone className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Smartphone className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         EcoTrack Mobile App
@@ -412,7 +412,7 @@ const MobileAppDevelopment = () => {
                         with 4.8★ rating. Features include carbon footprint
                         monitoring and eco-friendly recommendations.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +300% user engagement • 500K+ downloads
                       </div>
                     </CardContent>
@@ -430,8 +430,8 @@ const MobileAppDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-dark/20 to-coresync-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Users className="w-16 h-16 text-coresync-primary-dark" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-dark/20 to-Coresyncro-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Users className="w-16 h-16 text-Coresyncro-primary-dark" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         HealthSync Platform
@@ -441,7 +441,7 @@ const MobileAppDevelopment = () => {
                         providers. Streamlined appointment booking and health
                         record management.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +150% appointment efficiency • 50K+ active users
                       </div>
                     </CardContent>
@@ -459,8 +459,8 @@ const MobileAppDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <TrendingUp className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <TrendingUp className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         FinanceFlow App
@@ -470,7 +470,7 @@ const MobileAppDevelopment = () => {
                         Helps users track expenses, set budgets, and achieve
                         financial goals.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +200% user savings • 4.9★ app store rating
                       </div>
                     </CardContent>
@@ -493,7 +493,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   What Our Clients{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Say
                   </span>
                 </h2>
@@ -621,7 +621,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Why Choose Our{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Mobile Development
                   </span>
                 </h2>
@@ -639,7 +639,7 @@ const MobileAppDevelopment = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <CheckCircle className="w-5 h-5 text-coresync-primary-light flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-Coresyncro-primary-light flex-shrink-0" />
                     <span className="font-medium">{benefit}</span>
                   </div>
                 ))}
@@ -660,7 +660,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Development{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Process
                   </span>
                 </h2>
@@ -681,7 +681,7 @@ const MobileAppDevelopment = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center gap-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
+                          <div className="w-8 h-8 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
                             {index + 1}
                           </div>
                           <h3 className="text-lg font-bold">{step.title}</h3>
@@ -710,7 +710,7 @@ const MobileAppDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Ready to Build Your{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Mobile App?
                   </span>
                 </h2>

@@ -105,7 +105,7 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-foreground hover:text-coresync-primary-light transition-all duration-300 hover:scale-110 p-2 min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
+              className="text-foreground hover:text-Coresyncro-primary-light transition-all duration-300 hover:scale-110 p-2 min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

@@ -16,14 +16,14 @@ const AboutUs = () => {
       title: "Mission",
       content:
         "To create genuine, innovative, and secure digital solutions that help businesses grow, adapt, and lead in a constantly changing world. We strive to collaborate, inspire, and safeguard every digital journey we touch.",
-      gradient: "from-coresync-primary-light to-orange-500",
+      gradient: "from-Coresyncro-primary-light to-orange-500",
     },
     {
       icon: Shield,
       title: "Principles",
       content:
       "We commit to being your dependable technology partner, crafting solutions that serve your needs today and grow with your vision for tomorrow.",
-      gradient: "from-coresync-primary-dark to-blue-500",
+      gradient: "from-Coresyncro-primary-dark to-blue-500",
     },
     {
       icon: Heart,
@@ -68,13 +68,13 @@ const AboutUs = () => {
         <div className="absolute inset-0 pointer-events-none opacity-5">
           <div className="absolute top-0 left-0 w-full h-full">
             {/* Binary code pattern */}
-            <div className="absolute top-10 left-10 text-xs font-mono text-coresync-primary-light">
+            <div className="absolute top-10 left-10 text-xs font-mono text-Coresyncro-primary-light">
               01001000 01100101 01101100 01101100 01101111
             </div>
-            <div className="absolute top-20 right-20 text-xs font-mono text-coresync-primary-dark">
+            <div className="absolute top-20 right-20 text-xs font-mono text-Coresyncro-primary-dark">
               01010111 01101111 01110010 01101100 01100100
             </div>
-            <div className="absolute bottom-20 left-1/4 text-xs font-mono text-coresync-primary-light">
+            <div className="absolute bottom-20 left-1/4 text-xs font-mono text-Coresyncro-primary-light">
               01000011 01101111 01110010 01100101 01110011 01111001 01101110
               01100011
             </div>
@@ -92,8 +92,8 @@ const AboutUs = () => {
                 x2="100%"
                 y2="100%"
               >
-                <stop offset="0%" stopColor="var(--coresync-primary-light)" />
-                <stop offset="100%" stopColor="var(--coresync-primary-dark)" />
+                <stop offset="0%" stopColor="var(--Coresyncro-primary-light)" />
+                <stop offset="100%" stopColor="var(--Coresyncro-primary-dark)" />
               </linearGradient>
             </defs>
             {/* Network nodes and connections */}
@@ -171,9 +171,9 @@ const AboutUs = () => {
 
         {/* Floating Shapes */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 right-10 w-24 h-24 bg-coresync-primary-light/10 rounded-full animate-float"></div>
-          <div className="absolute bottom-1/4 left-10 w-16 h-16 bg-coresync-primary-dark/10 rounded-full animate-float-delayed"></div>
-          <div className="absolute top-1/2 left-1/2 w-8 h-8 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark opacity-20 transform rotate-45 animate-pulse"></div>
+          <div className="absolute top-1/4 right-10 w-24 h-24 bg-Coresyncro-primary-light/10 rounded-full animate-float"></div>
+          <div className="absolute bottom-1/4 left-10 w-16 h-16 bg-Coresyncro-primary-dark/10 rounded-full animate-float-delayed"></div>
+          <div className="absolute top-1/2 left-1/2 w-8 h-8 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark opacity-20 transform rotate-45 animate-pulse"></div>
         </div>
 
         <Navbar />
@@ -190,12 +190,12 @@ const AboutUs = () => {
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 About{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                  Coresync Infotech
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
+                  Coresyncro Infotech
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Created with a spirit of genuineness and innovation, Coresync Infotech is always ready 
+              Created with a spirit of genuineness and innovation, Coresyncro Infotech is always ready 
               to collaborate and bring great ideas to life. We believe in building an authentic and 
               safe digital world for every user — one where creativity thrives, technology empowers, 
               and trust is at the core. It’s time to protect and elevate your digital presence, and 
@@ -221,7 +221,7 @@ const AboutUs = () => {
                   variants={cardVariants}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark mb-2">
+                  <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark mb-2">
                     {stat.number}
                   </div>
                   <div className="text-muted-foreground font-medium">
@@ -245,7 +245,7 @@ const AboutUs = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Our{" "}
-                <span className="text-coresync-primary-light">Foundation</span>
+                <span className="text-Coresyncro-primary-light">Foundation</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 Built on strong values and driven by innovation
@@ -271,7 +271,7 @@ const AboutUs = () => {
                   }}
                   className="group perspective-1000"
                 >
-                  <Card className="relative h-full overflow-hidden bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-coresync-primary-light/30 transition-all duration-500">
+                  <Card className="relative h-full overflow-hidden bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-Coresyncro-primary-light/30 transition-all duration-500">
                     <CardContent className="p-6 text-center space-y-4 relative z-10">
                       {/* Icon */}
                       <div
@@ -281,7 +281,7 @@ const AboutUs = () => {
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-coresync-primary-light transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                         {principle.title}
                       </h3>
 
@@ -319,10 +319,10 @@ const AboutUs = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Our <span className="text-coresync-primary-dark">Culture</span>
+                Our <span className="text-Coresyncro-primary-dark">Culture</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                At Coresync Infotech, we foster a culture of continuous
+                At Coresyncro Infotech, we foster a culture of continuous
                 learning, innovation, and collaboration. We believe that great
                 software is built by great teams who are passionate about
                 solving complex problems and creating meaningful impact through
@@ -337,7 +337,7 @@ const AboutUs = () => {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <Users className="w-12 h-12 mx-auto mb-4 text-coresync-primary-light" />
+                  <Users className="w-12 h-12 mx-auto mb-4 text-Coresyncro-primary-light" />
                   <h3 className="font-semibold mb-2">Collaborative</h3>
                   <p className="text-muted-foreground text-sm">
                     We work together to achieve excellence
@@ -351,7 +351,7 @@ const AboutUs = () => {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <Lightbulb className="w-12 h-12 mx-auto mb-4 text-coresync-primary-dark" />
+                  <Lightbulb className="w-12 h-12 mx-auto mb-4 text-Coresyncro-primary-dark" />
                   <h3 className="font-semibold mb-2">Innovative</h3>
                   <p className="text-muted-foreground text-sm">
                     We embrace new technologies and ideas
@@ -365,7 +365,7 @@ const AboutUs = () => {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <Globe className="w-12 h-12 mx-auto mb-4 text-coresync-primary-light" />
+                  <Globe className="w-12 h-12 mx-auto mb-4 text-Coresyncro-primary-light" />
                   <h3 className="font-semibold mb-2">Global Impact</h3>
                   <p className="text-muted-foreground text-sm">
                     We create solutions that make a difference

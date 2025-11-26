@@ -152,7 +152,7 @@ const AnimationVideoEditing = () => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Animation &{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Video Editing
                   </span>
                 </h1>
@@ -165,7 +165,7 @@ const AnimationVideoEditing = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       130+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -173,7 +173,7 @@ const AnimationVideoEditing = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       5M+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -181,7 +181,7 @@ const AnimationVideoEditing = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       72hrs
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -189,7 +189,7 @@ const AnimationVideoEditing = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       4.9★
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -214,7 +214,7 @@ const AnimationVideoEditing = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Creative{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Services
                   </span>
                 </h2>
@@ -236,10 +236,10 @@ const AnimationVideoEditing = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
+                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-Coresyncro-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg group-hover:from-coresync-primary-light/30 group-hover:to-coresync-primary-dark/30 transition-all duration-300">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg group-hover:from-Coresyncro-primary-light/30 group-hover:to-Coresyncro-primary-dark/30 transition-all duration-300">
                             {service.icon}
                           </div>
                           <div className="flex items-center gap-2">
@@ -250,7 +250,7 @@ const AnimationVideoEditing = () => {
                           </div>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300">
+                        <h3 className="text-xl font-bold mb-3 group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                           {service.name}
                         </h3>
 
@@ -283,7 +283,7 @@ const AnimationVideoEditing = () => {
                         </div>
 
                         <Link to={service.link}>
-                          <Button className="w-full group-hover:bg-coresync-primary-light group-hover:text-white transition-all duration-300">
+                          <Button className="w-full group-hover:bg-Coresyncro-primary-light group-hover:text-white transition-all duration-300">
                             Learn More
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
@@ -309,7 +309,7 @@ const AnimationVideoEditing = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Ready to Create Amazing{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Visual Content?
                   </span>
                 </h2>

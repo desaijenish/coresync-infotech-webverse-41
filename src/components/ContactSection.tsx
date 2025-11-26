@@ -44,11 +44,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-coresync-primary-light/5 to-coresync-primary-dark/5 relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-Coresyncro-primary-light/5 to-Coresyncro-primary-dark/5 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-10 sm:top-20 left-4 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 bg-coresync-primary-light/10 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-10 sm:bottom-20 right-4 sm:right-10 w-16 h-16 sm:w-32 sm:h-32 bg-coresync-primary-dark/10 rounded-full animate-pulse"></div>
-      <div className="absolute top-1/2 left-1/4 w-8 h-8 sm:w-16 sm:h-16 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark opacity-10 rotate-45"></div>
+      <div className="absolute top-10 sm:top-20 left-4 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 bg-Coresyncro-primary-light/10 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-4 sm:right-10 w-16 h-16 sm:w-32 sm:h-32 bg-Coresyncro-primary-dark/10 rounded-full animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/4 w-8 h-8 sm:w-16 sm:h-16 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark opacity-10 rotate-45"></div>
       
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -59,7 +59,7 @@ const ContactSection = () => {
             <div className="space-y-4">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                 Let's Build the{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                   Future Together
                 </span>
               </h2>
@@ -68,15 +68,15 @@ const ContactSection = () => {
               </p>
               <div className="space-y-3 mt-6 sm:mt-8">
                 <div className="flex items-center space-x-3 justify-center lg:justify-start">
-                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full flex-shrink-0"></div>
                   <span className="text-sm sm:text-base text-muted-foreground">Free consultation and project estimation</span>
                 </div>
                 <div className="flex items-center space-x-3 justify-center lg:justify-start">
-                  <div className="w-2 h-2 bg-coresync-primary-dark rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-Coresyncro-primary-dark rounded-full flex-shrink-0"></div>
                   <span className="text-sm sm:text-base text-muted-foreground">24/7 support and maintenance</span>
                 </div>
                 <div className="flex items-center space-x-3 justify-center lg:justify-start">
-                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full flex-shrink-0"></div>
                   <span className="text-sm sm:text-base text-muted-foreground">Cutting-edge technology solutions</span>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const ContactSection = () => {
           }`}>
             <div className="relative">
               {/* Split colored background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-2xl transform rotate-1"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark rounded-2xl transform rotate-1"></div>
               <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-2xl p-6 sm:p-8 shadow-xl">
                 <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center">Start Your Project</h3>
                 
@@ -104,7 +104,7 @@ const ContactSection = () => {
                       placeholder="Enter your full name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="border-2 focus:border-coresync-primary-light transition-all duration-300 min-h-[44px] text-base"
+                      className="border-2 focus:border-Coresyncro-primary-light transition-all duration-300 min-h-[44px] text-base"
                     />
                   </div>
                   
@@ -119,7 +119,7 @@ const ContactSection = () => {
                       placeholder="Enter your email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="border-2 focus:border-coresync-primary-light transition-all duration-300 min-h-[44px] text-base"
+                      className="border-2 focus:border-Coresyncro-primary-light transition-all duration-300 min-h-[44px] text-base"
                     />
                   </div>
                   
@@ -133,13 +133,13 @@ const ContactSection = () => {
                       placeholder="Tell us about your project requirements..."
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="border-2 focus:border-coresync-primary-light min-h-[100px] sm:min-h-[120px] transition-all duration-300 text-base resize-none"
+                      className="border-2 focus:border-Coresyncro-primary-light min-h-[100px] sm:min-h-[120px] transition-all duration-300 text-base resize-none"
                     />
                   </div>
                   
                   <Button 
                     type="submit"
-                    className="w-full bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation"
+                    className="w-full bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation"
                   >
                     Send Message
                   </Button>

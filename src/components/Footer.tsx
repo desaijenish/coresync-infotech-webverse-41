@@ -29,13 +29,13 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: "📧", label: "Email", url: "mailto:info@coresync.com" },
+    { icon: "📧", label: "Email", url: "mailto:info@Coresyncro.com" },
     {
       icon: "📱",
       label: "LinkedIn",
-      url: "https://linkedin.com/company/coresync",
+      url: "https://linkedin.com/company/Coresyncro",
     },
-    { icon: "🐦", label: "Twitter", url: "https://twitter.com/coresync" },
+    { icon: "🐦", label: "Twitter", url: "https://twitter.com/Coresyncro" },
   ];
 
   return (
@@ -47,21 +47,21 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-2 group">
                   <img
                     src={"/assets/logo/icon.png"}
-                    alt="Coresync Icon"
+                    alt="Coresyncro Icon"
                     className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                   <img
-                    src={"/assets/logo/LogoText.png"}
-                    alt="Coresync Infotech"
+                    src={"/assets/logo/LogoText2.png"}
+                    alt="Coresyncro Infotech"
                     className="h-8 object-contain group-hover:brightness-110 transition-all duration-300"
                   />
                 </Link>
             {/* <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-lg flex items-center justify-center shadow-md">
+              <div className="w-12 h-12 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
               <span className="text-xl font-bold text-foreground">
-                Coresync Infotech
+                Coresyncro Infotech
               </span>
             </div> */}
             <p className="text-muted-foreground leading-relaxed">
@@ -75,7 +75,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300 text-lg"
+                  className="text-muted-foreground hover:text-Coresyncro-primary-light transition-colors duration-300 text-lg"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -93,7 +93,7 @@ const Footer = () => {
                   <li key={index}>
                     <Link
                       to={link.path}
-                      className="text-muted-foreground hover:text-coresync-primary-light transition-colors duration-300"
+                      className="text-muted-foreground hover:text-Coresyncro-primary-light transition-colors duration-300"
                     >
                       {link.name}
                     </Link>
@@ -107,18 +107,18 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Coresync Infotech. All rights reserved.
+            © {currentYear} Coresyncro Infotech. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link
               to="/terms"
-              className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300"
+              className="text-muted-foreground hover:text-Coresyncro-primary-light text-sm transition-colors duration-300"
             >
               Terms of Service
             </Link>
             <Link
               to="/privacy-policy"
-              className="text-muted-foreground hover:text-coresync-primary-light text-sm transition-colors duration-300"
+              className="text-muted-foreground hover:text-Coresyncro-primary-light text-sm transition-colors duration-300"
             >
               Privacy Policy
             </Link>

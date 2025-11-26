@@ -92,9 +92,9 @@ const InteractiveServicesOverview = () => {
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/30 to-background relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 right-4 sm:right-10 w-12 h-12 sm:w-20 sm:h-20 bg-coresync-primary-light/10 rounded-full animate-pulse"></div>
+        <div className="absolute top-10 right-4 sm:right-10 w-12 h-12 sm:w-20 sm:h-20 bg-Coresyncro-primary-light/10 rounded-full animate-pulse"></div>
         <div
-          className="absolute bottom-10 left-4 sm:left-10 w-10 h-10 sm:w-16 sm:h-16 bg-coresync-primary-dark/10 rounded-full animate-pulse"
+          className="absolute bottom-10 left-4 sm:left-10 w-10 h-10 sm:w-16 sm:h-16 bg-Coresyncro-primary-dark/10 rounded-full animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
       </div>
@@ -109,7 +109,7 @@ const InteractiveServicesOverview = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6"
           >
             Our Core{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
               Services
             </span>
           </motion.h2>
@@ -150,7 +150,7 @@ const InteractiveServicesOverview = () => {
               onMouseLeave={() => setHoveredService(null)}
               onClick={() => handleServiceClick(service.route)}
             >
-              <Card className="relative cursor-pointer transition-all duration-500 transform-gpu h-[200px] sm:h-[220px] bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-coresync-primary-light/30 overflow-hidden">
+              <Card className="relative cursor-pointer transition-all duration-500 transform-gpu h-[200px] sm:h-[220px] bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-Coresyncro-primary-light/30 overflow-hidden">
                 {/* Gradient Background */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
@@ -158,7 +158,7 @@ const InteractiveServicesOverview = () => {
 
                 {/* Hexagonal Shape Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-full opacity-50 group-hover:opacity-80 transition-all duration-500 group-hover:scale-110"></div>
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-full opacity-50 group-hover:opacity-80 transition-all duration-500 group-hover:scale-110"></div>
                 </div>
 
                 <CardContent className="relative z-10 p-4 sm:p-6 text-center space-y-3 sm:space-y-4 h-full flex flex-col justify-center">
@@ -175,7 +175,7 @@ const InteractiveServicesOverview = () => {
                   </motion.div>
 
                   {/* Service Title */}
-                  <h3 className="font-bold text-base sm:text-lg group-hover:text-coresync-primary-light transition-colors duration-300 relative z-20">
+                  <h3 className="font-bold text-base sm:text-lg group-hover:text-Coresyncro-primary-light transition-colors duration-300 relative z-20">
                     {service.title}
                   </h3>
 
@@ -205,7 +205,7 @@ const InteractiveServicesOverview = () => {
                       scale: hoveredService === index ? 1 : 0,
                     }}
                     transition={{ duration: 0.2 }}
-                    className="absolute bottom-2 right-2 w-6 h-6 bg-coresync-primary-light rounded-full flex items-center justify-center text-white text-xs font-bold"
+                    className="absolute bottom-2 right-2 w-6 h-6 bg-Coresyncro-primary-light rounded-full flex items-center justify-center text-white text-xs font-bold"
                   >
                     →
                   </motion.div>
@@ -213,7 +213,7 @@ const InteractiveServicesOverview = () => {
 
                 {/* 3D Glow Effect */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg blur-xl transition-opacity duration-300 ${
+                  className={`absolute inset-0 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg blur-xl transition-opacity duration-300 ${
                     hoveredService === index ? "opacity-100" : "opacity-0"
                   } -z-10`}
                 ></div>
@@ -236,7 +236,7 @@ const InteractiveServicesOverview = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 sm:px-8 py-3 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white rounded-lg font-semibold shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation transition-all duration-300"
+            className="px-6 sm:px-8 py-3 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white rounded-lg font-semibold shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation transition-all duration-300"
           >
             Get Started Today
           </motion.button>

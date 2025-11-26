@@ -45,13 +45,13 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="group hover:scale-105 hover:shadow-xl transition-all duration-300 border-2 hover:border-coresync-primary-light/50 bg-card/50 backdrop-blur-sm"
+              className="group hover:scale-105 hover:shadow-xl transition-all duration-300 border-2 hover:border-Coresyncro-primary-light/50 bg-card/50 backdrop-blur-sm"
             >
               <CardHeader className="text-center space-y-4">
                 <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <CardTitle className="text-xl font-bold group-hover:text-coresync-primary-light transition-colors duration-300">
+                <CardTitle className="text-xl font-bold group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                   {service.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground leading-relaxed">

@@ -159,11 +159,11 @@ const GameDevelopment = () => {
         {/* Animated Background Shapes */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-24 right-12 w-36 h-36 opacity-10">
-            <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-12 animate-float"></div>
+            <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-12 animate-float"></div>
           </div>
           <div className="absolute bottom-24 left-12 w-28 h-28 opacity-10">
             <div
-              className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float"
+              className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float"
               style={{ animationDelay: "1.8s" }}
             ></div>
           </div>
@@ -186,7 +186,7 @@ const GameDevelopment = () => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Game{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Development
                   </span>
                 </h1>
@@ -200,7 +200,7 @@ const GameDevelopment = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       110+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -208,7 +208,7 @@ const GameDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       10M+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -216,7 +216,7 @@ const GameDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       4.7★
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -224,7 +224,7 @@ const GameDevelopment = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       85%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -249,7 +249,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-8">
                   Crafting Interactive{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Experiences
                   </span>
                 </h2>
@@ -293,7 +293,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Game Development{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Expertise
                   </span>
                 </h2>
@@ -315,10 +315,10 @@ const GameDevelopment = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
+                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-Coresyncro-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg group-hover:from-coresync-primary-light/30 group-hover:to-coresync-primary-dark/30 transition-all duration-300">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg group-hover:from-Coresyncro-primary-light/30 group-hover:to-Coresyncro-primary-dark/30 transition-all duration-300">
                             {service.icon}
                           </div>
                           <div className="flex items-center gap-2">
@@ -329,7 +329,7 @@ const GameDevelopment = () => {
                           </div>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300">
+                        <h3 className="text-xl font-bold mb-3 group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                           {service.name}
                         </h3>
 
@@ -362,7 +362,7 @@ const GameDevelopment = () => {
                         </div>
 
                         <Link to={service.link}>
-                          <Button className="w-full group-hover:bg-coresync-primary-light group-hover:text-white transition-all duration-300">
+                          <Button className="w-full group-hover:bg-Coresyncro-primary-light group-hover:text-white transition-all duration-300">
                             Learn More
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
@@ -388,7 +388,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Award-Winning{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Game Portfolio
                   </span>
                 </h2>
@@ -409,8 +409,8 @@ const GameDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Play className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Play className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">Mystic Realms</h3>
                       <p className="text-muted-foreground text-sm mb-4">
@@ -418,7 +418,7 @@ const GameDevelopment = () => {
                         storytelling and real-time combat. Achieved 2M+
                         downloads with 4.8★ rating.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         2M+ downloads • 4.8★ rating • #1 RPG
                       </div>
                     </CardContent>
@@ -436,8 +436,8 @@ const GameDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-dark/20 to-coresync-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Target className="w-16 h-16 text-coresync-primary-dark" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-dark/20 to-Coresyncro-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Target className="w-16 h-16 text-Coresyncro-primary-dark" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">Neon Racers</h3>
                       <p className="text-muted-foreground text-sm mb-4">
@@ -445,7 +445,7 @@ const GameDevelopment = () => {
                         Features multiplayer competitions and customizable
                         vehicles.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         1.5M+ downloads • 500K+ active racers
                       </div>
                     </CardContent>
@@ -463,8 +463,8 @@ const GameDevelopment = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Layers3 className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Layers3 className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">Puzzle Worlds</h3>
                       <p className="text-muted-foreground text-sm mb-4">
@@ -472,7 +472,7 @@ const GameDevelopment = () => {
                         Cross-platform mobile game with social features and
                         achievements.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         3M+ downloads • 90% completion rate
                       </div>
                     </CardContent>
@@ -495,7 +495,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Game Publishers{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Love Working With Us
                   </span>
                 </h2>
@@ -619,7 +619,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Why Choose Our{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Game Development
                   </span>
                 </h2>
@@ -637,7 +637,7 @@ const GameDevelopment = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <CheckCircle className="w-5 h-5 text-coresync-primary-light flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-Coresyncro-primary-light flex-shrink-0" />
                     <span className="font-medium">{benefit}</span>
                   </div>
                 ))}
@@ -658,7 +658,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Game Development{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Process
                   </span>
                 </h2>
@@ -679,7 +679,7 @@ const GameDevelopment = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center gap-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
+                          <div className="w-8 h-8 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
                             {index + 1}
                           </div>
                           <h3 className="text-lg font-bold">{step.title}</h3>
@@ -708,7 +708,7 @@ const GameDevelopment = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Ready to Create Your{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Dream Game?
                   </span>
                 </h2>

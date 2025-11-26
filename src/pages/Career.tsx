@@ -377,7 +377,7 @@ const Career = () => {
               ease: "easeInOut",
             }}
           >
-            <Database className="w-full h-full text-coresync-primary-light" />
+            <Database className="w-full h-full text-Coresyncro-primary-light" />
           </motion.div>
 
           <motion.div
@@ -393,7 +393,7 @@ const Career = () => {
               delay: 1,
             }}
           >
-            <Code className="w-full h-full text-coresync-primary-dark" />
+            <Code className="w-full h-full text-Coresyncro-primary-dark" />
           </motion.div>
 
           <motion.div
@@ -409,7 +409,7 @@ const Career = () => {
               delay: 2,
             }}
           >
-            <Cpu className="w-full h-full text-coresync-primary-light" />
+            <Cpu className="w-full h-full text-Coresyncro-primary-light" />
           </motion.div>
 
           <motion.div
@@ -425,7 +425,7 @@ const Career = () => {
               delay: 0.5,
             }}
           >
-            <Network className="w-full h-full text-coresync-primary-dark" />
+            <Network className="w-full h-full text-Coresyncro-primary-dark" />
           </motion.div>
 
           <motion.div
@@ -440,7 +440,7 @@ const Career = () => {
               ease: "linear",
             }}
           >
-            <Binary className="w-full h-full text-coresync-primary-light" />
+            <Binary className="w-full h-full text-Coresyncro-primary-light" />
           </motion.div>
 
           <motion.div
@@ -456,7 +456,7 @@ const Career = () => {
               delay: 1.5,
             }}
           >
-            <Zap className="w-full h-full text-coresync-primary-dark" />
+            <Zap className="w-full h-full text-Coresyncro-primary-dark" />
           </motion.div>
         </div>
 
@@ -468,10 +468,10 @@ const Career = () => {
           className="relative pt-20 pb-16 px-4 overflow-hidden"
           ref={heroRef}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-coresync-primary-light/10 to-coresync-primary-dark/10">
+          <div className="absolute inset-0 bg-gradient-to-r from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10">
             <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600"
-              alt="Coresync Office"
+              alt="Coresyncro Office"
               className="w-full h-full object-cover opacity-20"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
@@ -495,8 +495,8 @@ const Career = () => {
                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               >
                 Join the{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
-                  Coresync Infotech Team
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
+                  Coresyncro Infotech Team
                 </span>
               </motion.h1>
               <motion.p
@@ -513,7 +513,7 @@ const Career = () => {
           </div>
         </section>
 
-        {/* Why Join Coresync Section */}
+        {/* Why Join Coresyncro Section */}
         <section className="py-12 px-4 relative z-10">
           <div className="container mx-auto">
             <motion.div
@@ -523,16 +523,16 @@ const Career = () => {
               viewport={{ once: true }}
               className="text-center mb-8"
             >
-              <Card className="max-w-4xl mx-auto bg-gradient-to-r from-coresync-primary-light/10 to-coresync-primary-dark/10 border-2 border-coresync-primary-light/20">
+              <Card className="max-w-4xl mx-auto bg-gradient-to-r from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10 border-2 border-Coresyncro-primary-light/20">
                 <CardContent className="p-8">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     Why Join{" "}
-                    <span className="text-coresync-primary-light">
-                      Coresync?
+                    <span className="text-Coresyncro-primary-light">
+                      Coresyncro?
                     </span>
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    At Coresync Infotech, we're not just building software—we're
+                    At Coresyncro Infotech, we're not just building software—we're
                     crafting the future of technology. Join a team of passionate
                     innovators who push boundaries, embrace challenges, and
                     create solutions that make a real impact in the world.
@@ -555,7 +555,7 @@ const Career = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Your{" "}
-                <span className="text-coresync-primary-light">Journey</span>{" "}
+                <span className="text-Coresyncro-primary-light">Journey</span>{" "}
                 with Us
               </h2>
               <p className="text-muted-foreground text-lg">
@@ -578,7 +578,7 @@ const Career = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Open{" "}
-                <span className="text-coresync-primary-light">Positions</span>
+                <span className="text-Coresyncro-primary-light">Positions</span>
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
                 Discover exciting opportunities to grow your career with us

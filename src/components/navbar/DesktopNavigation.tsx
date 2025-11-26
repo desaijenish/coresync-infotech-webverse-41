@@ -28,10 +28,10 @@ const DesktopNavigation = ({
           <Link
             key={link.name}
             to={link.href}
-            className="relative text-foreground hover:text-coresync-primary-light transition-all duration-300 group py-2"
+            className="relative text-foreground hover:text-Coresyncro-primary-light transition-all duration-300 group py-2"
           >
             {link.name}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark transition-all duration-300 group-hover:w-full"></span>
           </Link>
         );
       })}

@@ -81,10 +81,10 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">Team</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">Team</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Meet the passionate innovators behind Coresync Infotech's success
+            Meet the passionate innovators behind Coresyncro Infotech's success
           </p>
         </motion.div>
 
@@ -120,12 +120,12 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
               role="button"
               aria-label={`View ${member.name}'s profile`}
             >
-              <div className="relative h-full bg-card/70 backdrop-blur-sm border-2 border-transparent hover:border-coresync-primary-light/30 rounded-2xl p-6 text-center transition-all duration-500 overflow-hidden">
+              <div className="relative h-full bg-card/70 backdrop-blur-sm border-2 border-transparent hover:border-Coresyncro-primary-light/30 rounded-2xl p-6 text-center transition-all duration-500 overflow-hidden">
                 {/* Background gradient effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-coresync-primary-light/5 to-coresync-primary-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-Coresyncro-primary-light/5 to-Coresyncro-primary-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl -z-10"></div>
 
                 {/* Content */}
                 <div className="relative z-10">
@@ -134,15 +134,15 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                     <img
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
-                      className="w-full h-full rounded-full object-cover border-3 border-gradient-to-r from-coresync-primary-light to-coresync-primary-dark group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full rounded-full object-cover border-3 border-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark group-hover:scale-110 transition-transform duration-300"
                       loading="lazy"
                     />
                     {/* Photo glow */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-md -z-10"></div>
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-md -z-10"></div>
                   </div>
 
                   {/* Name & Role */}
-                  <h3 className="text-lg font-bold text-foreground mb-1 group-hover:text-coresync-primary-light transition-colors duration-300">
+                  <h3 className="text-lg font-bold text-foreground mb-1 group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                     {member.name}
                   </h3>
                   <p className="text-muted-foreground text-sm font-medium mb-2">
@@ -158,7 +158,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                       <Badge 
                         key={index}
                         variant="secondary"
-                        className="text-xs px-2 py-1 bg-gradient-to-r from-coresync-primary-light/10 to-coresync-primary-dark/10 text-foreground border border-coresync-primary-light/20"
+                        className="text-xs px-2 py-1 bg-gradient-to-r from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10 text-foreground border border-Coresyncro-primary-light/20"
                       >
                         {skill}
                       </Badge>
@@ -173,7 +173,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        className="absolute inset-0 bg-gradient-to-br from-coresync-primary-light/95 to-coresync-primary-dark/95 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center text-white p-4"
+                        className="absolute inset-0 bg-gradient-to-br from-Coresyncro-primary-light/95 to-Coresyncro-primary-dark/95 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center text-white p-4"
                       >
                         <p className="text-sm text-center mb-4 opacity-90">
                           {member.bio.slice(0, 100)}...
@@ -213,7 +213,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                     <img
                       src={selectedMember.photo}
                       alt={`${selectedMember.name} - ${selectedMember.role}`}
-                      className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-gradient-to-r from-coresync-primary-light to-coresync-primary-dark mb-4"
+                      className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark mb-4"
                     />
                     <h3 className="text-xl font-bold text-foreground mb-1">
                       {selectedMember.name}
@@ -251,7 +251,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                   <div className="md:col-span-2">
                     {/* Bio */}
                     <div className="mb-6">
-                      <h4 className="text-lg font-semibold mb-3 text-coresync-primary-light">
+                      <h4 className="text-lg font-semibold mb-3 text-Coresyncro-primary-light">
                         About
                       </h4>
                       <p className="text-muted-foreground leading-relaxed">
@@ -261,7 +261,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
 
                     {/* Skills */}
                     <div className="mb-6">
-                      <h4 className="text-lg font-semibold mb-3 text-coresync-primary-dark">
+                      <h4 className="text-lg font-semibold mb-3 text-Coresyncro-primary-dark">
                         Expertise
                       </h4>
                       <div className="flex flex-wrap gap-2">
@@ -269,7 +269,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                           <Badge 
                             key={index}
                             variant="secondary"
-                            className="bg-gradient-to-r from-coresync-primary-light/10 to-coresync-primary-dark/10 text-foreground border border-coresync-primary-light/20"
+                            className="bg-gradient-to-r from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10 text-foreground border border-Coresyncro-primary-light/20"
                           >
                             {skill}
                           </Badge>
@@ -280,7 +280,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
                     {/* Projects */}
                     {selectedMember.projects && selectedMember.projects.length > 0 && (
                       <div>
-                        <h4 className="text-lg font-semibold mb-3 text-coresync-primary-light">
+                        <h4 className="text-lg font-semibold mb-3 text-Coresyncro-primary-light">
                           Key Projects
                         </h4>
                         <ul className="space-y-2">
@@ -297,7 +297,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ teamData }) => {
 
                 {/* CTA */}
                 {/* <div className="mt-8 text-center">
-                  <Button className="bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark hover:from-coresync-primary-light/90 hover:to-coresync-primary-dark/90 text-white">
+                  <Button className="bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark hover:from-Coresyncro-primary-light/90 hover:to-Coresyncro-primary-dark/90 text-white">
                     Request Consultation
                   </Button>
                 </div> */}

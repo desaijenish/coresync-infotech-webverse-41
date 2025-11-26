@@ -388,7 +388,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
       <div className="absolute inset-0 pointer-events-none">
         {/* Binary Code Grid - Hidden on mobile for performance */}
         <div className="absolute inset-0 opacity-5 hidden md:block">
-          <div className="grid grid-cols-12 gap-4 h-full text-xs font-mono text-coresync-primary-light">
+          <div className="grid grid-cols-12 gap-4 h-full text-xs font-mono text-Coresyncro-primary-light">
             {Array.from({ length: 144 }).map((_, i) => (
               <div
                 key={i}
@@ -403,20 +403,20 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
 
         {/* Floating Geometric Shapes - Simplified for mobile */}
         <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 opacity-10">
-          <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-45 animate-float"></div>
+          <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-45 animate-float"></div>
         </div>
         <div className="absolute top-40 right-4 sm:right-20 w-12 h-12 sm:w-24 sm:h-24 opacity-10">
-          <div className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float-delayed"></div>
+          <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float-delayed"></div>
         </div>
         <div className="absolute bottom-40 left-1/4 w-10 h-10 sm:w-20 sm:h-20 opacity-10">
           <div
-            className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark clip-path-triangle animate-float"
+            className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark clip-path-triangle animate-float"
             style={{ animationDelay: "2s" }}
           ></div>
         </div>
         <div className="absolute top-60 right-1/3 w-8 h-8 sm:w-16 sm:h-16 opacity-10">
           <div
-            className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light transform rotate-12 animate-float"
+            className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light transform rotate-12 animate-float"
             style={{ animationDelay: "0.5s" }}
           ></div>
         </div>
@@ -495,8 +495,8 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
           {/* Left Column - Content */}
           <div className="space-y-6 animate-fade-in text-center lg:text-left order-2 lg:order-1">
             <div className="space-y-4">
-              <div className="text-sm font-semibold text-coresync-primary-light tracking-wide uppercase">
-                Welcome to Coresync Infotech
+              <div className="text-sm font-semibold text-Coresyncro-primary-light tracking-wide uppercase">
+                Welcome to Coresyncro Infotech
               </div>
 
               {/* Synchronized animated text container */}
@@ -516,7 +516,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
                   >
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                       Expert in{" "}
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                         {services[currentService].title}
                       </span>
                     </h1>
@@ -531,7 +531,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold px-6 sm:px-8 py-3 rounded-lg shadow-lg hover:shadow-xl btn-interactive min-h-[44px] touch-manipulation"
+                className="bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark hover:scale-105 transform transition-all duration-300 text-white font-semibold px-6 sm:px-8 py-3 rounded-lg shadow-lg hover:shadow-xl btn-interactive min-h-[44px] touch-manipulation"
                 onClick={onContactClick}
               >
                 Contact Us
@@ -539,7 +539,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-coresync-primary-light text-coresync-primary-light hover:bg-coresync-primary-light hover:text-white transition-all duration-300 px-6 sm:px-8 py-3 rounded-lg btn-interactive min-h-[44px] touch-manipulation"
+                className="border-2 border-Coresyncro-primary-light text-Coresyncro-primary-light hover:bg-Coresyncro-primary-light hover:text-white transition-all duration-300 px-6 sm:px-8 py-3 rounded-lg btn-interactive min-h-[44px] touch-manipulation"
               >
                 View Portfolio
               </Button>
@@ -549,8 +549,8 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
           {/* Right Column - Dynamic Illustration */}
           <div className="flex justify-center order-1 lg:order-2">
             <div className="relative">
-              <div className="w-80 h-80 sm:w-96 sm:h-96 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 text-coresync-primary-light dark:text-coresync-primary-dark">
+              <div className="w-80 h-80 sm:w-96 sm:h-96 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 text-Coresyncro-primary-light dark:text-Coresyncro-primary-dark">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={currentService}
@@ -569,10 +569,10 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
                   </AnimatePresence>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-6 h-6 sm:w-8 sm:h-8 bg-coresync-primary-light rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-4 h-4 sm:w-6 sm:h-6 bg-coresync-primary-dark rounded-full animate-pulse"></div>
-              <div className="absolute top-1/2 -left-6 sm:-left-8 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark rounded-full animate-float"></div>
-              <div className="absolute top-1/4 -right-4 sm:-right-6 w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float-delayed"></div>
+              <div className="absolute -top-4 -right-4 w-6 h-6 sm:w-8 sm:h-8 bg-Coresyncro-primary-light rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-4 h-4 sm:w-6 sm:h-6 bg-Coresyncro-primary-dark rounded-full animate-pulse"></div>
+              <div className="absolute top-1/2 -left-6 sm:-left-8 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark rounded-full animate-float"></div>
+              <div className="absolute top-1/4 -right-4 sm:-right-6 w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float-delayed"></div>
             </div>
           </div>
         </div>

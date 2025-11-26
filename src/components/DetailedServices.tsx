@@ -57,7 +57,7 @@ const DetailedServices = () => {
                     {category}
                     <button 
                       onClick={() => toggleExpansion(category)}
-                      className="text-coresync-primary-light hover:text-coresync-primary-dark transition-colors duration-300"
+                      className="text-Coresyncro-primary-light hover:text-Coresyncro-primary-dark transition-colors duration-300"
                     >
                       {expandedService === category ? <ChevronUp /> : <ChevronDown />}
                     </button>
@@ -71,7 +71,7 @@ const DetailedServices = () => {
                       <Badge 
                         key={index}
                         variant="secondary" 
-                        className="justify-center py-2 px-4 text-sm font-medium hover:bg-coresync-primary-light hover:text-white transition-all duration-300 cursor-pointer"
+                        className="justify-center py-2 px-4 text-sm font-medium hover:bg-Coresyncro-primary-light hover:text-white transition-all duration-300 cursor-pointer"
                       >
                         {tech}
                       </Badge>

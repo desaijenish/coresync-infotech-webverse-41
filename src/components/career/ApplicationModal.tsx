@@ -68,7 +68,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
             transition={{ duration: 0.3 }}
             className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto"
           >
-            <Card className="bg-background border-2 border-coresync-primary-light/20">
+            <Card className="bg-background border-2 border-Coresyncro-primary-light/20">
               <CardContent className="p-6">
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
@@ -98,7 +98,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background"
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -114,7 +114,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background"
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -130,7 +130,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background"
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background"
                         placeholder="Enter your phone number"
                       />
                     </div>
@@ -144,7 +144,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         value={formData.position}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background"
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background"
                       >
                         <option value="">Select a position</option>
                         <option value="frontend-developer">
@@ -174,7 +174,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                         onChange={handleFileChange}
                         accept=".pdf,.doc,.docx"
                         required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-coresync-primary-light file:text-white file:cursor-pointer"
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-Coresyncro-primary-light file:text-white file:cursor-pointer"
                       />
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
@@ -193,7 +193,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                       value={formData.coverLetter}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-coresync-primary-light focus:border-transparent bg-background resize-none"
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-Coresyncro-primary-light focus:border-transparent bg-background resize-none"
                       placeholder="Tell us why you're interested in this position..."
                     />
                   </div>
@@ -204,7 +204,7 @@ const ApplicationModal = ({ isOpen, onClose }: ApplicationModalProps) => {
                       type="submit"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex-1 py-3 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+                      className="flex-1 py-3 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
                     >
                       Submit Application
                     </motion.button>

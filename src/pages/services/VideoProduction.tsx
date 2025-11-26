@@ -127,10 +127,10 @@ const VideoProduction = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Video className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Video className="w-12 h-12 text-Coresyncro-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
                     Video{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                       Production
                     </span>
                   </h1>
@@ -144,7 +144,7 @@ const VideoProduction = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       150+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -152,7 +152,7 @@ const VideoProduction = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       99%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -160,7 +160,7 @@ const VideoProduction = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       98%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -168,7 +168,7 @@ const VideoProduction = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       10+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -193,7 +193,7 @@ const VideoProduction = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Captivating{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Stories
                   </span>
                 </h2>
@@ -220,7 +220,7 @@ const VideoProduction = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6">
                         <div className="flex items-center mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mr-4">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mr-4">
                             {feature.icon}
                           </div>
                           <h3 className="text-xl font-bold">{feature.title}</h3>
@@ -249,7 +249,7 @@ const VideoProduction = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Production Gear
                   </span>
                 </h2>
@@ -281,7 +281,7 @@ const VideoProduction = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Featured{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Work
                   </span>
                 </h2>
@@ -302,7 +302,7 @@ const VideoProduction = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-xl transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <Trophy className="w-6 h-6 text-coresync-primary-light" />
+                          <Trophy className="w-6 h-6 text-Coresyncro-primary-light" />
                           <div className="flex items-center gap-1">
                             <Star className="w-4 h-4 text-yellow-500" />
                             <span className="text-sm font-medium">
@@ -348,7 +348,7 @@ const VideoProduction = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Tell Your Story Through{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Video
                   </span>
                 </h2>

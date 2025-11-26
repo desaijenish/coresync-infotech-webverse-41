@@ -97,16 +97,16 @@ const TechnologiesMaster = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-background to-muted/30 relative overflow-hidden">
         {/* Background Decorations */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-coresync-primary-light/10 rounded-full animate-float"></div>
-          <div className="absolute bottom-10 right-10 w-16 h-16 bg-coresync-primary-dark/10 rounded-full animate-float-delayed"></div>
-          <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-to-br from-coresync-primary-light/10 to-coresync-primary-dark/10 rotate-45 animate-float"></div>
+          <div className="absolute top-10 left-10 w-20 h-20 bg-Coresyncro-primary-light/10 rounded-full animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-16 h-16 bg-Coresyncro-primary-dark/10 rounded-full animate-float-delayed"></div>
+          <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-to-br from-Coresyncro-primary-light/10 to-Coresyncro-primary-dark/10 rotate-45 animate-float"></div>
         </div>
 
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Technologies We{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                 Master
               </span>
             </h2>
@@ -144,7 +144,7 @@ const TechnologiesMaster = () => {
                         </div>
                         
                         <div>
-                          <h3 className="font-bold text-lg mb-2 group-hover:text-coresync-primary-light transition-colors">
+                          <h3 className="font-bold text-lg mb-2 group-hover:text-Coresyncro-primary-light transition-colors">
                             {tech.name}
                           </h3>
                           <Badge 

@@ -244,23 +244,23 @@ const Portfolio = () => {
           {/* Animated Background Shapes */}
           <div className="fixed inset-0 pointer-events-none overflow-hidden">
             <div className="absolute top-20 left-10 w-32 h-32 opacity-10">
-              <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-45 animate-float"></div>
+              <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-45 animate-float"></div>
             </div>
             <div className="absolute top-40 right-20 w-24 h-24 opacity-10">
               <div
-                className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float"
+                className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float"
                 style={{ animationDelay: "1s" }}
               ></div>
             </div>
             <div className="absolute bottom-40 left-1/4 w-20 h-20 opacity-10">
               <div
-                className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark clip-path-triangle animate-float"
+                className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark clip-path-triangle animate-float"
                 style={{ animationDelay: "2s" }}
               ></div>
             </div>
             <div className="absolute top-60 right-1/3 w-16 h-16 opacity-10">
               <div
-                className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light transform rotate-12 animate-float"
+                className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light transform rotate-12 animate-float"
                 style={{ animationDelay: "0.5s" }}
               ></div>
             </div>
@@ -275,7 +275,7 @@ const Portfolio = () => {
                 <div className="text-center mb-16">
                   <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
                     CRM & Automation{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                       Excellence
                     </span>
                   </h1>
@@ -291,7 +291,7 @@ const Portfolio = () => {
                       className="text-center animate-fade-in"
                       style={{ animationDelay: "0.2s" }}
                     >
-                      <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                         $8.2M+
                       </div>
                       <div className="text-sm text-muted-foreground">
@@ -302,7 +302,7 @@ const Portfolio = () => {
                       className="text-center animate-fade-in"
                       style={{ animationDelay: "0.4s" }}
                     >
-                      <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                         85%
                       </div>
                       <div className="text-sm text-muted-foreground">
@@ -313,7 +313,7 @@ const Portfolio = () => {
                       className="text-center animate-fade-in"
                       style={{ animationDelay: "0.6s" }}
                     >
-                      <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                         50+
                       </div>
                       <div className="text-sm text-muted-foreground">
@@ -324,7 +324,7 @@ const Portfolio = () => {
                       className="text-center animate-fade-in"
                       style={{ animationDelay: "0.8s" }}
                     >
-                      <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                      <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                         24/7
                       </div>
                       <div className="text-sm text-muted-foreground">
@@ -381,7 +381,7 @@ const Portfolio = () => {
                             : "0ms",
                         }}
                       >
-                        <Card className="h-full flex flex-col bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group overflow-hidden">
+                        <Card className="h-full flex flex-col bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-Coresyncro-primary-light/10 transition-all duration-500 hover:-translate-y-2 group overflow-hidden">
                           {/* Project Image */}
                           <div className="relative h-48 overflow-hidden">
                             <img
@@ -401,7 +401,7 @@ const Portfolio = () => {
                             <div className="absolute top-4 left-4">
                               <Badge
                                 variant="secondary"
-                                className="bg-coresync-primary-light/20 text-white border-white/30 backdrop-blur-sm"
+                                className="bg-Coresyncro-primary-light/20 text-white border-white/30 backdrop-blur-sm"
                               >
                                 {project.category.charAt(0).toUpperCase() +
                                   project.category.slice(1)}
@@ -411,7 +411,7 @@ const Portfolio = () => {
 
                           <CardContent className="p-6 flex-1 flex flex-col">
                             {/* Project Title */}
-                            <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300 line-clamp-2">
+                            <h3 className="text-xl font-bold mb-3 group-hover:text-Coresyncro-primary-light transition-colors duration-300 line-clamp-2">
                               {project.title}
                             </h3>
 
@@ -432,7 +432,7 @@ const Portfolio = () => {
                                     <Badge
                                       key={techIndex}
                                       variant="outline"
-                                      className="text-xs px-2 py-1 hover:bg-coresync-primary-light/10 transition-colors duration-200"
+                                      className="text-xs px-2 py-1 hover:bg-Coresyncro-primary-light/10 transition-colors duration-200"
                                     >
                                       {tech}
                                     </Badge>
@@ -453,7 +453,7 @@ const Portfolio = () => {
                               <div className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
                                 Role & Impact
                               </div>
-                              <div className="text-sm font-medium text-coresync-primary-light mb-1">
+                              <div className="text-sm font-medium text-Coresyncro-primary-light mb-1">
                                 {project.role}
                               </div>
                               <div className="text-xs text-muted-foreground">
@@ -467,7 +467,7 @@ const Portfolio = () => {
                                 <Button
                                   variant="outline"
                                   size="sm"
-                                  className="w-full group-hover:bg-coresync-primary-light group-hover:text-white group-hover:border-coresync-primary-light transition-all duration-300"
+                                  className="w-full group-hover:bg-Coresyncro-primary-light group-hover:text-white group-hover:border-Coresyncro-primary-light transition-all duration-300"
                                 >
                                   View Details
                                   <ExternalLink className="w-3 h-3 ml-2" />
@@ -484,7 +484,7 @@ const Portfolio = () => {
                           <DialogTitle className="text-3xl mb-2">
                             {project.title}
                           </DialogTitle>
-                          <p className="text-lg text-coresync-primary-light font-medium">
+                          <p className="text-lg text-Coresyncro-primary-light font-medium">
                             {project.tagline}
                           </p>
                         </DialogHeader>
@@ -503,7 +503,7 @@ const Portfolio = () => {
                                 <div className="text-sm text-muted-foreground mb-1">
                                   Impact
                                 </div>
-                                <div className="font-semibold text-coresync-primary-light">
+                                <div className="font-semibold text-Coresyncro-primary-light">
                                   {project.impact}
                                 </div>
                               </div>
@@ -511,7 +511,7 @@ const Portfolio = () => {
                                 <div className="text-sm text-muted-foreground mb-1">
                                   ROI
                                 </div>
-                                <div className="font-semibold text-coresync-primary-light">
+                                <div className="font-semibold text-Coresyncro-primary-light">
                                   {project.roi}
                                 </div>
                               </div>
@@ -567,25 +567,25 @@ const Portfolio = () => {
                               </h4>
                               <div className="space-y-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full"></div>
+                                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full"></div>
                                   <span className="text-sm">
                                     Streamlined operational efficiency
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full"></div>
+                                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full"></div>
                                   <span className="text-sm">
                                     Enhanced customer relationship management
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full"></div>
+                                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full"></div>
                                   <span className="text-sm">
                                     Improved data visibility and reporting
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <div className="w-2 h-2 bg-coresync-primary-light rounded-full"></div>
+                                  <div className="w-2 h-2 bg-Coresyncro-primary-light rounded-full"></div>
                                   <span className="text-sm">
                                     Automated workflow optimization
                                   </span>

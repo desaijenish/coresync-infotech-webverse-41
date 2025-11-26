@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full p-1 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-coresync-primary-light"
+      className="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full p-1 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-Coresyncro-primary-light"
       aria-label="Toggle theme"
     >
       <div

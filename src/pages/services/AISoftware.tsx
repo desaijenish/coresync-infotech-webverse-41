@@ -141,11 +141,11 @@ const ComputerSoftware = () => {
         {/* Animated Background Shapes */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-32 left-16 w-28 h-28 opacity-10">
-            <div className="w-full h-full bg-gradient-to-br from-coresync-primary-light to-coresync-primary-dark rotate-45 animate-float"></div>
+            <div className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-light to-Coresyncro-primary-dark rotate-45 animate-float"></div>
           </div>
           <div className="absolute bottom-32 right-16 w-20 h-20 opacity-10">
             <div
-              className="w-full h-full bg-gradient-to-br from-coresync-primary-dark to-coresync-primary-light rounded-full animate-float"
+              className="w-full h-full bg-gradient-to-br from-Coresyncro-primary-dark to-Coresyncro-primary-light rounded-full animate-float"
               style={{ animationDelay: "2s" }}
             ></div>
           </div>
@@ -166,7 +166,7 @@ const ComputerSoftware = () => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
                   Computer{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Software
                   </span>
                 </h1>
@@ -179,7 +179,7 @@ const ComputerSoftware = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       78+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -187,7 +187,7 @@ const ComputerSoftware = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       95%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -195,7 +195,7 @@ const ComputerSoftware = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       500K+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -203,7 +203,7 @@ const ComputerSoftware = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       99.9%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -228,7 +228,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-8">
                   Intelligent Software{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     For Modern Business
                   </span>
                 </h2>
@@ -274,7 +274,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Software{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Solutions
                   </span>
                 </h2>
@@ -296,10 +296,10 @@ const ComputerSoftware = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-coresync-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
+                    <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-2xl hover:shadow-Coresyncro-primary-light/10 transition-all duration-500 hover:-translate-y-2 group">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg group-hover:from-coresync-primary-light/30 group-hover:to-coresync-primary-dark/30 transition-all duration-300">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg group-hover:from-Coresyncro-primary-light/30 group-hover:to-Coresyncro-primary-dark/30 transition-all duration-300">
                             {service.icon}
                           </div>
                           <div className="flex items-center gap-2">
@@ -310,7 +310,7 @@ const ComputerSoftware = () => {
                           </div>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-3 group-hover:text-coresync-primary-light transition-colors duration-300">
+                        <h3 className="text-xl font-bold mb-3 group-hover:text-Coresyncro-primary-light transition-colors duration-300">
                           {service.name}
                         </h3>
 
@@ -343,7 +343,7 @@ const ComputerSoftware = () => {
                         </div>
 
                         <Link to={service.link}>
-                          <Button className="w-full group-hover:bg-coresync-primary-light group-hover:text-white transition-all duration-300">
+                          <Button className="w-full group-hover:bg-Coresyncro-primary-light group-hover:text-white transition-all duration-300">
                             Learn More
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
@@ -369,7 +369,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Enterprise{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Success Stories
                   </span>
                 </h2>
@@ -389,8 +389,8 @@ const ComputerSoftware = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Brain className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Brain className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         SmartFactory AI
@@ -400,7 +400,7 @@ const ComputerSoftware = () => {
                         downtime by 40% and improving quality control through
                         predictive analytics.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +40% efficiency • $5M cost savings annually
                       </div>
                     </CardContent>
@@ -418,8 +418,8 @@ const ComputerSoftware = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-dark/20 to-coresync-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Cog className="w-16 h-16 text-coresync-primary-dark" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-dark/20 to-Coresyncro-primary-light/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Cog className="w-16 h-16 text-Coresyncro-primary-dark" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         GlobalTrade ERP
@@ -429,7 +429,7 @@ const ComputerSoftware = () => {
                         worldwide. Streamlined operations with real-time
                         inventory and financial reporting.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +60% process efficiency • 50+ locations integrated
                       </div>
                     </CardContent>
@@ -447,8 +447,8 @@ const ComputerSoftware = () => {
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
-                        <Activity className="w-16 h-16 text-coresync-primary-light" />
+                      <div className="w-full h-48 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mb-4 flex items-center justify-center">
+                        <Activity className="w-16 h-16 text-Coresyncro-primary-light" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">
                         DataInsight Analytics
@@ -458,7 +458,7 @@ const ComputerSoftware = () => {
                         daily data with real-time dashboards and predictive
                         modeling.
                       </p>
-                      <div className="text-sm text-coresync-primary-light font-medium">
+                      <div className="text-sm text-Coresyncro-primary-light font-medium">
                         +250% faster insights • 1TB+ data processed daily
                       </div>
                     </CardContent>
@@ -481,7 +481,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   What Enterprise Leaders{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Say
                   </span>
                 </h2>
@@ -605,7 +605,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Why Choose Our{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Software Solutions
                   </span>
                 </h2>
@@ -623,7 +623,7 @@ const ComputerSoftware = () => {
                     }`}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <CheckCircle className="w-5 h-5 text-coresync-primary-light flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-Coresyncro-primary-light flex-shrink-0" />
                     <span className="font-medium">{benefit}</span>
                   </div>
                 ))}
@@ -644,7 +644,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our Development{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Process
                   </span>
                 </h2>
@@ -665,7 +665,7 @@ const ComputerSoftware = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-lg transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center gap-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
+                          <div className="w-8 h-8 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
                             {index + 1}
                           </div>
                           <h3 className="text-lg font-bold">{step.title}</h3>
@@ -694,7 +694,7 @@ const ComputerSoftware = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Ready to Transform Your{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Business?
                   </span>
                 </h2>

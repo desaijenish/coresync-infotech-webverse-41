@@ -46,8 +46,8 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     
     /* Custom brand colors */
-    --coresync-primary-light: 26 100% 48%;
-    --coresync-primary-dark: 216 100% 64%;
+    --Coresyncro-primary-light: 26 100% 48%;
+    --Coresyncro-primary-dark: 216 100% 64%;
   }
 
   .dark {
@@ -357,7 +357,7 @@ html {
 
 /* Technology badge hover effects */
 .tech-badge:hover {
-  background: linear-gradient(45deg, hsl(var(--coresync-primary-light)), hsl(var(--coresync-primary-dark)));
+  background: linear-gradient(45deg, hsl(var(--Coresyncro-primary-light)), hsl(var(--Coresyncro-primary-dark)));
   color: white;
   transform: scale(1.1) rotate(2deg);
   box-shadow: 0 4px 12px rgba(236, 110, 0, 0.3);

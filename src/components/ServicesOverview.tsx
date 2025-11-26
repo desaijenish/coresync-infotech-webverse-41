@@ -42,15 +42,15 @@ const ServicesOverview = () => {
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/30 to-background relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 right-4 sm:right-10 w-12 h-12 sm:w-20 sm:h-20 bg-coresync-primary-light/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-10 left-4 sm:left-10 w-10 h-10 sm:w-16 sm:h-16 bg-coresync-primary-dark/10 rounded-full animate-float-delayed"></div>
+        <div className="absolute top-10 right-4 sm:right-10 w-12 h-12 sm:w-20 sm:h-20 bg-Coresyncro-primary-light/10 rounded-full animate-float"></div>
+        <div className="absolute bottom-10 left-4 sm:left-10 w-10 h-10 sm:w-16 sm:h-16 bg-Coresyncro-primary-dark/10 rounded-full animate-float-delayed"></div>
       </div>
 
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Our Core{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
               Services
             </span>
           </h2>
@@ -89,7 +89,7 @@ const ServicesOverview = () => {
                 </div>
                 
                 {/* Service title */}
-                <h3 className="font-bold text-base sm:text-lg group-hover:text-coresync-primary-light transition-colors duration-300 relative z-10">
+                <h3 className="font-bold text-base sm:text-lg group-hover:text-Coresyncro-primary-light transition-colors duration-300 relative z-10">
                   {service.title}
                 </h3>
                 
@@ -103,7 +103,7 @@ const ServicesOverview = () => {
                 </p>
 
                 {/* Glow effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg blur-xl transition-opacity duration-300 ${
+                <div className={`absolute inset-0 bg-gradient-to-br from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg blur-xl transition-opacity duration-300 ${
                   hoveredService === index ? 'opacity-100' : 'opacity-0'
                 }`}></div>
               </CardContent>
@@ -114,7 +114,7 @@ const ServicesOverview = () => {
         {/* Call to action */}
         <div className="text-center mt-8 sm:mt-12">
           <p className="text-muted-foreground mb-4 px-4">Ready to start your project?</p>
-          <button className="px-6 sm:px-8 py-3 bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark text-white rounded-lg hover:scale-105 transition-transform duration-300 font-semibold shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation">
+          <button className="px-6 sm:px-8 py-3 bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark text-white rounded-lg hover:scale-105 transition-transform duration-300 font-semibold shadow-lg hover:shadow-xl min-h-[44px] touch-manipulation">
             Get Started Today
           </button>
         </div>

@@ -127,10 +127,10 @@ const TwoDThreeDGames = () => {
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
-                  <Gamepad className="w-12 h-12 text-coresync-primary-light mr-4" />
+                  <Gamepad className="w-12 h-12 text-Coresyncro-primary-light mr-4" />
                   <h1 className="text-4xl md:text-6xl font-bold">
                     2D/3D{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                       Games
                     </span>
                   </h1>
@@ -144,7 +144,7 @@ const TwoDThreeDGames = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       50+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -152,7 +152,7 @@ const TwoDThreeDGames = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       9M+
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -160,7 +160,7 @@ const TwoDThreeDGames = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       96%
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -168,7 +168,7 @@ const TwoDThreeDGames = () => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-coresync-primary-light mb-2">
+                    <div className="text-3xl font-bold text-Coresyncro-primary-light mb-2">
                       4.8★
                     </div>
                     <div className="text-sm text-muted-foreground">
@@ -193,7 +193,7 @@ const TwoDThreeDGames = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   The Best of{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Both Worlds
                   </span>
                 </h2>
@@ -220,7 +220,7 @@ const TwoDThreeDGames = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6">
                         <div className="flex items-center mb-4">
-                          <div className="p-3 bg-gradient-to-r from-coresync-primary-light/20 to-coresync-primary-dark/20 rounded-lg mr-4">
+                          <div className="p-3 bg-gradient-to-r from-Coresyncro-primary-light/20 to-Coresyncro-primary-dark/20 rounded-lg mr-4">
                             {feature.icon}
                           </div>
                           <h3 className="text-xl font-bold">{feature.title}</h3>
@@ -249,7 +249,7 @@ const TwoDThreeDGames = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Our{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Toolbox
                   </span>
                 </h2>
@@ -281,7 +281,7 @@ const TwoDThreeDGames = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Featured{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Projects
                   </span>
                 </h2>
@@ -302,7 +302,7 @@ const TwoDThreeDGames = () => {
                     <Card className="h-full bg-card/50 backdrop-blur-md border-white/20 dark:border-white/10 hover:shadow-xl transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-4">
-                          <Trophy className="w-6 h-6 text-coresync-primary-light" />
+                          <Trophy className="w-6 h-6 text-Coresyncro-primary-light" />
                           <div className="flex items-center gap-1">
                             <Star className="w-4 h-4 text-yellow-500" />
                             <span className="text-sm font-medium">
@@ -348,7 +348,7 @@ const TwoDThreeDGames = () => {
               >
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                   Innovative Games,{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark">
                     Limitless Possibilities
                   </span>
                 </h2>

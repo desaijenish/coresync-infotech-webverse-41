@@ -69,7 +69,7 @@ const PerksSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why <span className="text-coresync-primary-light">Choose Us</span>
+            Why <span className="text-Coresyncro-primary-light">Choose Us</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             We believe in creating an environment where you can thrive
@@ -90,12 +90,12 @@ const PerksSection = () => {
               whileHover={{ scale: 1.05, rotateY: 5 }}
               className="group"
             >
-              <Card className="h-full bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-coresync-primary-light/30 transition-all duration-300">
+              <Card className="h-full bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-Coresyncro-primary-light/30 transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-coresync-primary-light to-coresync-primary-dark flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-Coresyncro-primary-light to-Coresyncro-primary-dark flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <perk.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-coresync-primary-light transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-Coresyncro-primary-light transition-colors">
                     {perk.title}
                   </h3>
                   <p className="text-muted-foreground">

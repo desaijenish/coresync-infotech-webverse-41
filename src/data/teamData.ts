@@ -38,7 +38,7 @@ export const teamData: TeamMember[] = [
   bio: "Avnit is an experienced Senior Android Developer skilled in building high-performance, user-centric mobile applications. With strong expertise in Java and Kotlin, he focuses on creating smooth, reliable, and scalable app experiences that turn ideas into impactful digital solutions.",
   skills: ["Android", "Java/Kotlin", "Project Management", "Analytics", "Stakeholder Management"],
   linkedin: "https://linkedin.com/in/marcus-chen",
-  email: "marcus@coresync.com",
+  email: "marcus@Coresyncro.com",
   projects: [
     "Launched mobile app with 95% user satisfaction",
     "Increased client retention by 35% through UX improvements",
@@ -54,7 +54,7 @@ export const teamData: TeamMember[] = [
   bio: "Dhruvisha is a senior UI/UX designer dedicated to creating visually appealing and intuitive digital experiences. She blends creativity with deep user research, ensuring every design decision enhances usability, accessibility, and overall product satisfaction.",
   skills: ["UI Design", "UX Research", "Figma", "Prototyping", "Design Systems"],
   linkedin: "https://linkedin.com/in/priya-sharma",
-  email: "priya@coresync.com",
+  email: "priya@Coresyncro.com",
   projects: [
     "Redesigned e-commerce platform increasing conversions by 28%",
     "Created design system used across 12+ applications",
@@ -70,7 +70,7 @@ export const teamData: TeamMember[] = [
   bio: "Isha is a creative UI/UX Designer who focuses on crafting modern, user-friendly interfaces. Her work emphasizes clean aesthetics, thoughtful interaction design, and seamless user flows that elevate the overall product experience.",
   skills: ["UI Design", "UX Research", "Figma", "Prototyping", "Design Systems"],
   linkedin: "https://linkedin.com/in/sarah-johnson",
-  email: "sarah@coresync.com",
+  email: "sarah@Coresyncro.com",
   projects: [
     "Designed intuitive mobile interfaces improving task completion rates",
     "Created interactive prototypes enhancing client presentations",
