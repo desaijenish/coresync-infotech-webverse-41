@@ -97,12 +97,12 @@ const Navbar = () => {
               serviceCategories={serviceCategories}
             />
             {/* <ServicesMenu serviceCategories={serviceCategories} /> */}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-3">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-foreground hover:text-Coresyncro-primary-light transition-all duration-300 hover:scale-110 p-2 min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
